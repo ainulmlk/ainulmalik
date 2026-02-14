@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="fr" data-theme="dark" data-lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="meta.title">Portfolio — Réseaux & Télécom</title>
+  <link rel="stylesheet" href="portfolio_styles.css"/>
+</head>
+
+<body>
+  <!-- floating stickers (decor) -->
+  <div class="sticker s-star" aria-hidden="true"></div>
+  <div class="sticker s-clover" aria-hidden="true"></div>
+  <div class="sticker s-heart" aria-hidden="true"></div>
+
+  <header class="topbar">
+   <div class="brand">
+  <span class="logo-dot"></span>
+  <div class="brand-stack">
+    <span class="brand-text" data-i18n="brand.name">Ainul Malik</span>
+    <span class="brand-phon" data-i18n="brand.phon">pronounced: eye-nool</span>
+  </div>
+</div>
+
+
+    <nav class="nav">
+      <a href="#about" data-i18n="nav.about">À propos</a>
+      <a href="#projects" data-i18n="nav.projects">Projets</a>
+      <a href="#skills" data-i18n="nav.skills">Compétences</a>
+      <a href="#languages" data-i18n="nav.languages">Langues</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="top-actions">
+      <button class="lang" id="langBtn" type="button" aria-label="Toggle language">FR</button>
+      <button class="mode" id="modeBtn" type="button" aria-label="Toggle theme"><span>✦</span></button>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HERO COLLAGE -->
+    <section class="hero reveal">
+      <div class="hero-left">
+
+        <div class="scribble-title">
+          <span class="hand" data-i18n="hero.hand">hello ♡</span>
+          <div class="subtitle" data-i18n="hero.subtitle">
+            Réseaux & Télécommunications • Recherche de stage en France
+          </div>
+        </div>
+
+        <div class="apple-card tilt" data-tilt>
+          <div class="tape tape-a" aria-hidden="true"></div>
+          <div class="tape tape-b" aria-hidden="true"></div>
+
+          <div class="apple">
+            <div class="shine" aria-hidden="true"></div>
+            <div class="apple-text">
+              <div class="big" data-i18n="hero.appleTitle">NETWORK NOTES</div>
+              <div class="small" data-i18n="hero.appleLine">Routing • Switching • Services • Troubleshooting</div>
+            </div>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn" href="assets/CV.pdf" target="_blank" rel="noreferrer" data-i18n="hero.cvBtn">Télécharger CV</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/ainul-malik-70097b2b8" target="_blank" rel="noreferrer" data-i18n="hero.linkedinBtn">LinkedIn</a>
+          </div>
+
+          <div class="apple-stickers">
+            <button class="chip" data-pop-fr="VLANs, trunking, STP, inter-VLAN routing" data-pop-en="VLANs, trunking, STP, inter-VLAN routing" data-i18n="hero.chip1">Switching</button>
+            <button class="chip" data-pop-fr="Routage statique, OSPF (bases), NAT/PAT, ACLs" data-pop-en="Static routing, OSPF (basics), NAT/PAT, ACLs" data-i18n="hero.chip2">Routing</button>
+            <button class="chip" data-pop-fr="Wireshark, DNS/HTTP/FTP, tests & vérifications" data-pop-en="Wireshark, DNS/HTTP/FTP, tests & verification" data-i18n="hero.chip3">Troubleshooting</button>
+          </div>
+        </div>
+
+        <div class="note reveal">
+          <div class="note-dot" aria-hidden="true"></div>
+          <p data-i18n="hero.note">
+            Site interactif : cartes qui se soulèvent au survol, tooltips, animations au scroll, et mode FR/EN + clair/sombre.
+          </p>
+        </div>
+      </div>
+
+      <!-- ABOUT ME PANEL -->
+      <aside class="about-board reveal" id="about">
+        <div class="paper">
+          <div class="paper-header">
+            <span class="tag" data-i18n="about.tag">à propos</span>
+            <span class="mini" data-i18n="about.hello">Hello</span>
+          </div>
+
+          <div class="about-grid">
+            <div class="polaroid tilt" data-tilt>
+              <div class="pin" aria-hidden="true"></div>
+             <div class="photo">
+  <img src="assets/ainul.jpg" alt="Ainul Nafisah" class="photo-img">
+</div>
+
+              <div class="caption" data-i18n="about.name">Ainul Nafisah BINTI ABD MALIK</div>
+            </div>
+
+            <div class="bio">
+              <h2 class="name" data-i18n="about.title">Ainul Nafisah BINTI ABD MALIK</h2>
+              <p class="desc" data-i18n="about.desc">
+                Étudiante en Réseaux & Télécommunications, je consolide mes bases en routage, switching,
+                services réseau et dépannage (Packet Tracer, Wireshark, Linux). Je recherche un stage en France
+                afin de contribuer à des opérations réseau réelles, à la documentation et à la fiabilité des services.
+              </p>
+
+              <div class="traits">
+                <span class="label" data-i18n="about.trait1">rigoureuse</span>
+                <span class="label" data-i18n="about.trait2">curieuse</span>
+                <span class="label" data-i18n="about.trait3">organisée</span>
+              </div>
+
+              <div class="contacts">
+                <a class="contact-item" href="mailto:ainulsmz06@gmail.com">
+                  <span class="ico">✉</span> <span data-i18n="about.email">ainulsmz06@gmail.com</span>
+                </a>
+                <a class="contact-item" href="https://www.linkedin.com/in/ainul-malik-70097b2b8" target="_blank" rel="noreferrer">
+                  <span class="ico">⌁</span> <span data-i18n="about.social">LinkedIn / GitHub</span>
+                </a>
+                <a class="contact-item" href="#">
+                  <span class="ico">⌂</span> <span data-i18n="about.location">Sophia Antipolis, France</span>
+                </a>
+              </div>
+
+              <div class="cta-row">
+                <a class="btn" href="#projects" data-i18n="about.cta1">Voir les projets</a>
+                <a class="btn ghost" href="#contact" data-i18n="about.cta2">Me contacter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section reveal" id="projects">
+      <div class="section-head">
+        <h3 data-i18n="projects.title">Projets</h3>
+        <p data-i18n="projects.subtitle">Survoler = lift • Cliquer = détails (flip)</p>
+      </div>
+
+      <div class="cards">
+        <!-- Project 1 -->
+        <article class="proj card flip" tabindex="0" role="button" aria-label="Project 1">
+          <div class="card-face front">
+            <div class="washi" aria-hidden="true"></div>
+            <h4 data-i18n="projects.p1.title">Topologie VLAN + inter-VLAN + ACL</h4>
+            <p data-i18n="projects.p1.desc">Segmentation LAN, politiques d’accès, et vérifications.</p>
+            <div class="tags">
+              <span>VLAN</span><span>ACL</span><span>Packet Tracer</span>
+            </div>
+          </div>
+          <div class="card-face back">
+            <h4 data-i18n="projects.what.title">Ce que j’ai fait</h4>
+            <ul>
+              <li data-i18n="projects.p1.b1">Création VLANs + trunking + inter-VLAN routing</li>
+              <li data-i18n="projects.p1.b2">ACLs (autoriser/refuser selon besoins)</li>
+              <li data-i18n="projects.p1.b3">Tests : ping, traceroute, show vlan / show ip int br</li>
+            </ul>
+            <a class="link" href="#" target="_blank" rel="noreferrer" data-i18n="projects.open">Ouvrir ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="proj card flip" tabindex="0" role="button" aria-label="Project 2">
+          <div class="card-face front">
+            <div class="washi alt" aria-hidden="true"></div>
+            <h4 data-i18n="projects.p2.title">NAT/PAT + DMZ (DNS/FTP/HTTP)</h4>
+            <p data-i18n="projects.p2.desc">Accès externe contrôlé + services en DMZ.</p>
+            <div class="tags">
+              <span>NAT</span><span>DMZ</span><span>Services</span>
+            </div>
+          </div>
+          <div class="card-face back">
+            <h4 data-i18n="projects.what.title">Ce que j’ai fait</h4>
+            <ul>
+              <li data-i18n="projects.p2.b1">NAT statique pour serveur, PAT pour clients</li>
+              <li data-i18n="projects.p2.b2">Configuration DNS + FTP/HTTP + sécurité de base</li>
+              <li data-i18n="projects.p2.b3">Vérif : show ip nat translations, ping, telnet/ftp</li>
+            </ul>
+            <a class="link" href="#" target="_blank" rel="noreferrer" data-i18n="projects.open">Ouvrir ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="proj card flip" tabindex="0" role="button" aria-label="Project 3">
+          <div class="card-face front">
+            <div class="washi" aria-hidden="true"></div>
+            <h4 data-i18n="projects.p3.title">Analyse Wireshark (DNS + HTTP)</h4>
+            <p data-i18n="projects.p3.desc">Comprendre une communication bout-à-bout.</p>
+            <div class="tags">
+              <span>Wireshark</span><span>DNS</span><span>TCP</span>
+            </div>
+          </div>
+          <div class="card-face back">
+            <h4 data-i18n="projects.what.title">Ce que j’ai fait</h4>
+            <ul>
+              <li data-i18n="projects.p3.b1">Filtrage, inspection trames, handshake TCP</li>
+              <li data-i18n="projects.p3.b2">Résolution DNS + requêtes HTTP</li>
+              <li data-i18n="projects.p3.b3">Conclusion : causes possibles & bonnes pratiques</li>
+            </ul>
+            <a class="link" href="#" target="_blank" rel="noreferrer" data-i18n="projects.open">Ouvrir ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section reveal" id="skills">
+      <div class="section-head">
+        <h3 data-i18n="skills.title">Compétences</h3>
+        <p data-i18n="skills.subtitle">Survoler les stickers pour voir des détails.</p>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill paper-card">
+          <div class="corner" aria-hidden="true"></div>
+          <h4 data-i18n="skills.net.title">Réseaux</h4>
+          <div class="chips">
+            <span class="chip" data-pop-fr="VLANs, trunk, STP, inter-VLAN" data-pop-en="VLANs, trunk, STP, inter-VLAN" data-i18n="skills.net.c1">Switching</span>
+            <span class="chip" data-pop-fr="Routage statique, OSPF (bases), ACL" data-pop-en="Static routing, OSPF (basics), ACL" data-i18n="skills.net.c2">Routing</span>
+            <span class="chip" data-pop-fr="NAT/PAT, DHCP, DNS" data-pop-en="NAT/PAT, DHCP, DNS" data-i18n="skills.net.c3">Services</span>
+          </div>
+        </div>
+
+        <div class="skill paper-card">
+          <div class="corner" aria-hidden="true"></div>
+          <h4 data-i18n="skills.tools.title">Outils</h4>
+          <div class="chips">
+            <span class="chip" data-pop-fr="Simulation & configuration" data-pop-en="Simulation & configuration" data-i18n="skills.tools.c1">Packet Tracer</span>
+            <span class="chip" data-pop-fr="Capture & analyse de trafic" data-pop-en="Traffic capture & analysis" data-i18n="skills.tools.c2">Wireshark</span>
+            <span class="chip" data-pop-fr="Bases Linux (réseau + CLI)" data-pop-en="Linux basics (networking + CLI)" data-i18n="skills.tools.c3">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill paper-card">
+          <div class="corner" aria-hidden="true"></div>
+          <h4 data-i18n="skills.soft.title">Pro</h4>
+          <div class="chips">
+            <span class="chip" data-pop-fr="Rédaction claire (docs, rapports)" data-pop-en="Clear writing (docs, reports)" data-i18n="skills.soft.c1">Documentation</span>
+            <span class="chip" data-pop-fr="Tests, vérifs, rigueur" data-pop-en="Testing, verification, rigor" data-i18n="skills.soft.c2">Méthode</span>
+            <span class="chip" data-pop-fr="Travail en équipe / communication" data-pop-en="Teamwork / communication" data-i18n="skills.soft.c3">Collaboration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="section reveal" id="languages">
+      <div class="section-head">
+        <h3 data-i18n="lang.title">Langues</h3>
+        <p data-i18n="lang.subtitle">Communication claire pour la documentation, les tickets et le travail en équipe.</p>
+      </div>
+
+      <div class="lang-grid">
+        <div class="paper-card lang-card">
+          <h4 data-i18n="lang.french.title">Français</h4>
+          <p data-i18n="lang.french.level">Niveau : B1–B2 (en progression)</p>
+          <ul>
+            <li data-i18n="lang.french.point1">Rédaction de rapports techniques et compréhension en réunion.</li>
+            <li data-i18n="lang.french.point2">À l’aise en communication quotidienne.</li>
+          </ul>
+        </div>
+
+        <div class="paper-card lang-card">
+          <h4 data-i18n="lang.english.title">Anglais</h4>
+          <p data-i18n="lang.english.level">Niveau : C1 (professionnel)</p>
+          <ul>
+            <li data-i18n="lang.english.point1">Documentation technique, présentations et communication par e-mail.</li>
+            <li data-i18n="lang.english.point2">À l’aise en équipe internationale.</li>
+          </ul>
+        </div>
+
+        <div class="paper-card lang-card">
+          <h4 data-i18n="lang.malay.title">Malais</h4>
+          <p data-i18n="lang.malay.level">Langue maternelle</p>
+          <ul>
+            <li data-i18n="lang.malay.point1">Expression orale et écrite native.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section reveal" id="contact">
+      <div class="section-head">
+        <h3 data-i18n="contact.title">Contact</h3>
+        <p data-i18n="contact.subtitle">Simple, rapide, recruteur-friendly.</p>
+      </div>
+
+      <div class="contact-row">
+        <div class="paper-card contact-card">
+          <h4 data-i18n="contact.cardTitle">Let’s talk ✿</h4>
+          <p data-i18n="contact.cardDesc">
+            Ouverte aux opportunités de stage en Réseaux & Télécom en France. Disponible pour échanger et envoyer mon CV.
+          </p>
+          <div class="contact-actions">
+            <a class="btn" href="mailto:you@email.com" data-i18n="contact.emailBtn">M’envoyer un email</a>
+            <a class="btn ghost" href="assets/CV.pdf" target="_blank" rel="noreferrer" data-i18n="contact.cvBtn">Voir le CV (PDF)</a>
+          </div>
+        </div>
+
+        <footer class="mini-footer">
+          <span>© <span id="year"></span> <span data-i18n="footer.name">Your Name</span></span>
+          <span class="dot">•</span>
+          <span class="tiny" data-i18n="footer.note">apple theme scrapbook — interactif • FR/EN • clair/sombre</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- tooltip -->
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+
+  <script src="portfolio_script.js"></script>
+</body>
+</html>
+
