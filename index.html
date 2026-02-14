@@ -3,48 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title data-i18n="meta.title">Portfolio — Réseaux & Télécom</title>
   <link rel="stylesheet" href="portfolio_styles.css"/>
+
+  <!-- 🍏 Favicon (no file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%8F%3C/text%3E%3C/svg%3E">
 </head>
 
 <body>
+  <!-- top progress bar -->
+  <div class="progress" aria-hidden="true">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
   <!-- floating stickers (decor) -->
   <div class="sticker s-star" aria-hidden="true"></div>
   <div class="sticker s-clover" aria-hidden="true"></div>
   <div class="sticker s-heart" aria-hidden="true"></div>
 
   <header class="topbar">
-   <div class="brand">
-  <span class="logo-dot"></span>
-  <div class="brand-stack">
-    <span class="brand-text" data-i18n="brand.name">Ainul Malik</span>
-    <span class="brand-phon" data-i18n="brand.phon">pronounced: eye-nool</span>
-  </div>
-</div>
+    <div class="brand">
+      <span class="logo-dot"></span>
+      <div class="brand-stack">
+        <span class="brand-text" data-i18n="brand.name">Ainul Malik</span>
+        <span class="brand-phon" data-i18n="brand.phon">prononciation : aï-noul</span>
+      </div>
+    </div>
 
+    <!-- Premium mobile hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
 
-    <nav class="nav">
+    <nav class="nav" id="navMenu">
       <a href="#about" data-i18n="nav.about">À propos</a>
       <a href="#projects" data-i18n="nav.projects">Projets</a>
       <a href="#skills" data-i18n="nav.skills">Compétences</a>
       <a href="#languages" data-i18n="nav.languages">Langues</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
+
+      <!-- keep actions visible inside mobile menu too -->
+      <div class="nav-actions">
+        <button class="lang" id="langBtn" type="button" aria-label="Toggle language">FR</button>
+        <button class="mode" id="modeBtn" type="button" aria-label="Toggle theme"><span>✦</span></button>
+      </div>
     </nav>
 
-    <div class="top-actions">
-      <button class="lang" id="langBtn" type="button" aria-label="Toggle language">FR</button>
-      <button class="mode" id="modeBtn" type="button" aria-label="Toggle theme"><span>✦</span></button>
-    </div>
+    <!-- overlay for mobile menu -->
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
   </header>
 
   <main class="wrap">
 
-    <!-- HERO COLLAGE -->
+    <!-- HERO -->
     <section class="hero reveal">
       <div class="hero-left">
-
         <div class="scribble-title">
-          <span class="hand" data-i18n="hero.hand">hello ♡</span>
+          <span class="hand" data-i18n="hero.hand">grab yours ♡</span>
           <div class="subtitle" data-i18n="hero.subtitle">
             Réseaux & Télécommunications • Recherche de stage en France
           </div>
@@ -82,7 +98,7 @@
         </div>
       </div>
 
-      <!-- ABOUT ME PANEL -->
+      <!-- ABOUT -->
       <aside class="about-board reveal" id="about">
         <div class="paper">
           <div class="paper-header">
@@ -93,9 +109,11 @@
           <div class="about-grid">
             <div class="polaroid tilt" data-tilt>
               <div class="pin" aria-hidden="true"></div>
-             <div class="photo">
-  <img src="assets/ainul.jpg" alt="Ainul Nafisah" class="photo-img">
-</div>
+
+              <!-- Photo using <img> (best + reliable) -->
+              <div class="photo">
+                <img src="assets/ainul.jpg" alt="Ainul Nafisah BINTI ABD MALIK" class="photo-img">
+              </div>
 
               <div class="caption" data-i18n="about.name">Ainul Nafisah BINTI ABD MALIK</div>
             </div>
@@ -119,10 +137,10 @@
                   <span class="ico">✉</span> <span data-i18n="about.email">ainulsmz06@gmail.com</span>
                 </a>
                 <a class="contact-item" href="https://www.linkedin.com/in/ainul-malik-70097b2b8" target="_blank" rel="noreferrer">
-                  <span class="ico">⌁</span> <span data-i18n="about.social">LinkedIn / GitHub</span>
+                  <span class="ico">⌁</span> <span data-i18n="about.social">LinkedIn</span>
                 </a>
                 <a class="contact-item" href="#">
-                  <span class="ico">⌂</span> <span data-i18n="about.location">Sophia Antipolis, France</span>
+                  <span class="ico">⌂</span> <span data-i18n="about.location">France</span>
                 </a>
               </div>
 
@@ -144,7 +162,6 @@
       </div>
 
       <div class="cards">
-        <!-- Project 1 -->
         <article class="proj card flip" tabindex="0" role="button" aria-label="Project 1">
           <div class="card-face front">
             <div class="washi" aria-hidden="true"></div>
@@ -165,7 +182,6 @@
           </div>
         </article>
 
-        <!-- Project 2 -->
         <article class="proj card flip" tabindex="0" role="button" aria-label="Project 2">
           <div class="card-face front">
             <div class="washi alt" aria-hidden="true"></div>
@@ -186,7 +202,6 @@
           </div>
         </article>
 
-        <!-- Project 3 -->
         <article class="proj card flip" tabindex="0" role="button" aria-label="Project 3">
           <div class="card-face front">
             <div class="washi" aria-hidden="true"></div>
@@ -234,6 +249,10 @@
             <span class="chip" data-pop-fr="Simulation & configuration" data-pop-en="Simulation & configuration" data-i18n="skills.tools.c1">Packet Tracer</span>
             <span class="chip" data-pop-fr="Capture & analyse de trafic" data-pop-en="Traffic capture & analysis" data-i18n="skills.tools.c2">Wireshark</span>
             <span class="chip" data-pop-fr="Bases Linux (réseau + CLI)" data-pop-en="Linux basics (networking + CLI)" data-i18n="skills.tools.c3">Linux</span>
+
+            <!-- you can add more chips here safely now -->
+            <!-- <span class="chip">Cisco IOS</span> -->
+            <!-- <span class="chip">GNS3</span> -->
           </div>
         </div>
 
@@ -259,7 +278,7 @@
       <div class="lang-grid">
         <div class="paper-card lang-card">
           <h4 data-i18n="lang.french.title">Français</h4>
-          <p data-i18n="lang.french.level">Niveau : B1–B2 (en progression)</p>
+          <p data-i18n="lang.french.level">Niveau : B1 (objectif B2+ en mai)</p>
           <ul>
             <li data-i18n="lang.french.point1">Rédaction de rapports techniques et compréhension en réunion.</li>
             <li data-i18n="lang.french.point2">À l’aise en communication quotidienne.</li>
@@ -299,18 +318,19 @@
             Ouverte aux opportunités de stage en Réseaux & Télécom en France. Disponible pour échanger et envoyer mon CV.
           </p>
           <div class="contact-actions">
-            <a class="btn" href="mailto:you@email.com" data-i18n="contact.emailBtn">M’envoyer un email</a>
+            <a class="btn" href="mailto:ainulsmz06@gmail.com" data-i18n="contact.emailBtn">M’envoyer un email</a>
             <a class="btn ghost" href="assets/CV.pdf" target="_blank" rel="noreferrer" data-i18n="contact.cvBtn">Voir le CV (PDF)</a>
           </div>
         </div>
 
         <footer class="mini-footer">
-          <span>© <span id="year"></span> <span data-i18n="footer.name">Your Name</span></span>
+          <span>© <span id="year"></span> <span data-i18n="footer.name">Ainul Nafisah BINTI ABD MALIK</span></span>
           <span class="dot">•</span>
           <span class="tiny" data-i18n="footer.note">apple theme scrapbook — interactif • FR/EN • clair/sombre</span>
         </footer>
       </div>
     </section>
+
   </main>
 
   <!-- tooltip -->
@@ -319,4 +339,3 @@
   <script src="portfolio_script.js"></script>
 </body>
 </html>
-

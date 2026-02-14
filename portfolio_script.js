@@ -42,7 +42,6 @@ const i18n = {
     about: {
       tag: "à propos",
       hello: "Hello",
-      photo: "your photo",
       name: "Ainul Nafisah BINTI ABD MALIK",
       title: "Ainul Nafisah BINTI ABD MALIK",
       desc:
@@ -59,7 +58,7 @@ const i18n = {
 
     projects: {
       title: "Projets",
-      subtitle: "Survoler = lift • Cliquer = détails (flip)",
+      subtitle: "Survoler = lift • Cliquer = détails",
       open: "Ouvrir ↗",
       what: { title: "Ce que j’ai fait" },
       p1: {
@@ -148,7 +147,6 @@ const i18n = {
     about: {
       tag: "about",
       hello: "Hello",
-      photo: "your photo",
       name: "Ainul Nafisah BINTI ABD MALIK",
       title: "Ainul Nafisah BINTI ABD MALIK",
       desc:
@@ -165,7 +163,7 @@ const i18n = {
 
     projects: {
       title: "Projects",
-      subtitle: "Hover = lift • Click = details (flip)",
+      subtitle: "Hover = lift • Click = details",
       open: "Open ↗",
       what: { title: "What I did" },
       p1: {
@@ -263,7 +261,7 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
-/* ---------------- FLIP CARDS ---------------- */
+/* ---------------- PROJECT CARDS ---------------- */
 document.querySelectorAll(".flip").forEach(card => {
   const toggle = () => card.classList.toggle("is-flipped");
   card.addEventListener("click", toggle);
@@ -303,7 +301,7 @@ document.querySelectorAll("[data-pop-fr], [data-pop-en]").forEach(el => {
   el.addEventListener("mouseleave", hideTip);
 });
 
-/* ---------------- SUBTLE TILT FOLLOW (optional) ---------------- */
+/* ---------------- SUBTLE TILT FOLLOW ---------------- */
 document.querySelectorAll("[data-tilt]").forEach(el => {
   let rect;
   el.addEventListener("mouseenter", () => rect = el.getBoundingClientRect());
@@ -319,3 +317,42 @@ document.querySelectorAll("[data-tilt]").forEach(el => {
     el.style.transform = "";
   });
 });
+
+/* ---------------- SCROLL PROGRESS ---------------- */
+const progressBar = document.getElementById("progressBar");
+function updateProgress(){
+  const doc = document.documentElement;
+  const scrollTop = doc.scrollTop || document.body.scrollTop;
+  const scrollHeight = doc.scrollHeight - doc.clientHeight;
+  const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+  progressBar.style.width = `${progress}%`;
+}
+window.addEventListener("scroll", updateProgress, { passive: true });
+window.addEventListener("resize", updateProgress);
+updateProgress();
+
+/* ---------------- PREMIUM MOBILE MENU ---------------- */
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+const overlay = document.getElementById("menuOverlay");
+
+function openMenu(){
+  navMenu.classList.add("open");
+  hamburger.classList.add("active");
+  overlay.classList.add("show");
+  document.body.classList.add("menu-open");
+}
+function closeMenu(){
+  navMenu.classList.remove("open");
+  hamburger.classList.remove("active");
+  overlay.classList.remove("show");
+  document.body.classList.remove("menu-open");
+}
+
+hamburger.addEventListener("click", () => {
+  if(navMenu.classList.contains("open")) closeMenu();
+  else openMenu();
+});
+overlay.addEventListener("click", closeMenu);
+document.querySelectorAll(".nav a").forEach(link => link.addEventListener("click", closeMenu));
+window.addEventListener("scroll", () => { if(navMenu.classList.contains("open")) closeMenu(); }, { passive:true });
