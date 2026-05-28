@@ -27,7 +27,7 @@ const i18n = {
     nav: { about:"À propos", projects:"Projets", skills:"Compétences", languages:"Langues", contact:"Contact" },
 
     hero: {
-      hand: "bienvenue ♡",
+      hand: "grab yours ♡",
       subtitle: "Réseaux & Télécommunications • Recherche de stage en France",
       appleTitle: "NETWORK NOTES",
       appleLine: "Routing • Switching • Services • Troubleshooting",
@@ -59,28 +59,44 @@ const i18n = {
     projects: {
       title: "Projets",
       subtitle: "Survoler = lift • Cliquer = détails",
+      newSubtitle: "Projets techniques et créatifs qui reflètent à la fois mes compétences en ingénierie et en communication.",
+      hint: "Cliquer pour les détails →",
+      objectif: "Objectif",
+      whatIdid: "Ce que j'ai fait",
+      skills: "Compétences",
+      context: "Contexte",
+      tools: "Outils",
+      transferable: "Compétences transférables",
+      visitSite: "Visiter le site ↗",
+      openProof: "Voir la topologie ↗",
+      visitChannel: "Voir la chaîne ↗",
       open: "Ouvrir ↗",
-      what: { title: "Ce que j’ai fait" },
+      what: { title: "Ce que j'ai fait" },
       p1: {
-        title: "Topologie VLAN + inter-VLAN + ACL",
-        desc: "Segmentation LAN, politiques d’accès, et vérifications.",
-        b1: "Création VLANs + trunking + inter-VLAN routing",
-        b2: "ACLs (autoriser/refuser selon besoins)",
-        b3: "Tests : ping, traceroute, show vlan / show ip int br"
+        title: "Interactive Portfolio Website",
+        desc: "Portfolio bilingue responsive conçu et développé en HTML, CSS et JavaScript.",
+        objective: "Créer un portfolio interactif et bilingue pour présenter mon profil à des recruteurs en France.",
+        b1: "Design responsive + animations scroll + flip cards",
+        b2: "Mode bilingue FR/EN + thème clair/sombre",
+        b3: "Déploiement GitHub Pages"
       },
       p2: {
-        title: "NAT/PAT + DMZ (DNS/FTP/HTTP)",
-        desc: "Accès externe contrôlé + services en DMZ.",
-        b1: "NAT statique pour serveur, PAT pour clients",
-        b2: "Configuration DNS + FTP/HTTP + sécurité de base",
-        b3: "Vérif : show ip nat translations, ping, telnet/ftp"
+        title: "Enterprise Network Admin",
+        desc: "Design et configuration d'une infrastructure réseau segmentée avec VLANs et routage.",
+        context: "Simulation d'une entreprise avec plusieurs départements et politiques d'accès différentes.",
+        b1: "VLANs + trunking + routage inter-VLAN",
+        b2: "NAT statique + PAT clients + DMZ services",
+        b3: "ACLs + tests ping/traceroute/show commands"
       },
       p3: {
-        title: "Analyse Wireshark (DNS + HTTP)",
-        desc: "Comprendre une communication bout-à-bout.",
-        b1: "Filtrage, inspection trames, handshake TCP",
-        b2: "Résolution DNS + requêtes HTTP",
-        b3: "Conclusion : causes possibles & bonnes pratiques"
+        title: "YouTube Content Creation",
+        desc: "Contenu lifestyle et storytelling axé sur la régularité et l'engagement.",
+        b1: "Communication claire et storytelling visuel",
+        b2: "Régularité, planification, gestion de contenu",
+        b3: "Montage vidéo + compréhension de l'audience",
+        s1: "Créativité",
+        s2: "Rigueur",
+        s3: "Confiance"
       }
     },
 

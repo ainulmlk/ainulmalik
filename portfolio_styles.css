@@ -1179,3 +1179,8 @@ p{ line-height:1.45; }
   .proj3-card.is-flipped .proj3-front { display: none; }
   .proj3-card.is-flipped .proj3-back  { display: flex; }
 }
+
+/* Fix: stickers behind content on mobile */
+@media (max-width: 900px) {
+  .sticker { z-index: -1; opacity: .5; }
+}
