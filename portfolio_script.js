@@ -27,7 +27,7 @@ const i18n = {
     nav: { about:"À propos", projects:"Projets", skills:"Compétences", languages:"Langues", contact:"Contact" },
 
     hero: {
-      hand: "grab yours ♡",
+      hand: "bienvenue ♡",
       subtitle: "Réseaux & Télécommunications • Recherche de stage en France",
       appleTitle: "NETWORK NOTES",
       appleLine: "Routing • Switching • Services • Troubleshooting",
@@ -164,28 +164,44 @@ const i18n = {
     projects: {
       title: "Projects",
       subtitle: "Hover = lift • Click = details",
+      newSubtitle: "Technical and creative projects reflecting both my engineering and communication skills.",
+      hint: "Click for details →",
+      objectif: "Objective",
+      whatIdid: "What I did",
+      skills: "Skills",
+      context: "Context",
+      tools: "Tools",
+      transferable: "Transferable skills",
+      visitSite: "Visit live website ↗",
+      openProof: "View topology ↗",
+      visitChannel: "Visit channel ↗",
       open: "Open ↗",
       what: { title: "What I did" },
       p1: {
-        title: "VLAN topology + inter-VLAN + ACL",
-        desc: "LAN segmentation, access policies, and verification.",
-        b1: "Built VLANs + trunking + inter-VLAN routing",
-        b2: "Implemented ACL policies (allow/deny)",
-        b3: "Tests: ping, traceroute, show vlan / show ip int br"
+        title: "Interactive Portfolio Website",
+        desc: "Responsive bilingual portfolio designed and built with HTML, CSS and JavaScript.",
+        objective: "Build an interactive bilingual portfolio to showcase my profile to recruiters in France.",
+        b1: "Responsive design + scroll animations + flip cards",
+        b2: "Bilingual FR/EN mode + light/dark theme toggle",
+        b3: "Deployed on GitHub Pages"
       },
       p2: {
-        title: "NAT/PAT + DMZ (DNS/FTP/HTTP)",
-        desc: "Controlled external access + services in DMZ.",
-        b1: "Static NAT for server, PAT for clients",
-        b2: "Configured DNS + FTP/HTTP + basic security",
-        b3: "Verify: show ip nat translations, ping, telnet/ftp"
+        title: "Enterprise Network Admin",
+        desc: "Design and configuration of a segmented network infrastructure using VLANs and routing.",
+        context: "Simulated company with multiple departments requiring different access policies.",
+        b1: "VLANs + trunking + inter-VLAN routing",
+        b2: "Static NAT (server) + PAT (clients) + DMZ services",
+        b3: "ACLs + ping/traceroute/show commands testing"
       },
       p3: {
-        title: "Wireshark analysis (DNS + HTTP)",
-        desc: "Understanding end-to-end communication.",
-        b1: "Filters, frame inspection, TCP handshake",
-        b2: "DNS resolution + HTTP requests",
-        b3: "Conclusion: likely causes & best practices"
+        title: "YouTube Content Creation",
+        desc: "Lifestyle and storytelling content focused on consistency and audience engagement.",
+        b1: "Clear communication and visual storytelling",
+        b2: "Consistency, content planning and management",
+        b3: "Video editing + audience understanding",
+        s1: "Creativity",
+        s2: "Rigour",
+        s3: "Confidence"
       }
     },
 
@@ -261,8 +277,8 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
-/* ---------------- PROJECT CARDS ---------------- */
-document.querySelectorAll(".flip").forEach(card => {
+/* ---------------- PROJECT CARDS (old + new) ---------------- */
+document.querySelectorAll(".flip, .flip3").forEach(card => {
   const toggle = () => card.classList.toggle("is-flipped");
   card.addEventListener("click", toggle);
   card.addEventListener("keydown", (ev) => {
