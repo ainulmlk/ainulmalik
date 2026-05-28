@@ -27,7 +27,7 @@ const i18n = {
     nav: { about:"À propos", projects:"Projets", skills:"Compétences", languages:"Langues", contact:"Contact" },
 
     hero: {
-      hand: "grab yours ♡",
+      hand: "bienvenue ♡",
       subtitle: "Réseaux & Télécommunications • Recherche de stage en France",
       appleTitle: "NETWORK NOTES",
       appleLine: "Routing • Switching • Services • Troubleshooting",
@@ -45,7 +45,7 @@ const i18n = {
       name: "Ainul Nafisah BINTI ABD MALIK",
       title: "Ainul Nafisah BINTI ABD MALIK",
       desc:
-        "Étudiante en Réseaux & Télécommunications, je consolide mes bases en routage, switching, services réseau et dépannage (Packet Tracer, Wireshark, Linux). Je recherche un stage en France afin de contribuer à des opérations réseau réelles, à la documentation et à la fiabilité des services.",
+        "Étudiante en BUT Réseaux & Télécommunications originaire de Malaisie, je suis passionnée par les technologies réseau, la communication et la création de projets interactifs. Curieuse et créative, j’aime comprendre le fonctionnement des systèmes tout en cherchant des façons simples et humaines de les rendre accessibles. En dehors de la technique, j’apprécie la création de contenu, le design visuel et le storytelling..",
       trait1: "rigoureuse",
       trait2: "curieuse",
       trait3: "organisée",
