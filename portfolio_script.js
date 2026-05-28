@@ -27,7 +27,7 @@ const i18n = {
     nav: { about:"À propos", projects:"Projets", skills:"Compétences", languages:"Langues", contact:"Contact" },
 
     hero: {
-      hand: "bienvenue ♡",
+      hand: "Bienvenue ♡",
       subtitle: "Réseaux & Télécommunications • Recherche de stage en France",
       appleTitle: "NETWORK NOTES",
       appleLine: "Routing • Switching • Services • Troubleshooting",
