@@ -40,7 +40,7 @@ const i18n = {
       tag:"à propos", hello:"Hello ✿",
       name:"Ainul Nafisah BINTI ABD MALIK",
       title:"Ainul Nafisah BINTI ABD MALIK",
-      desc:"Étudiante malaisienne en BUT Réseaux & Télécommunications en France, je construis progressivement mon expertise en routage, switching et services réseau. Curieuse et motivée, j'aime combiner compétences techniques et créativité à travers la conception web et la création de contenu numérique. En dehors de mes études, je gère une chaîne YouTube consacrée à mon quotidien, ce qui me permet de développer mes compétences en communication, en montage vidéo et en gestion de projets personnels. À la recherche d'un stage en administration des réseaux, je souhaite mettre mes connaissances en pratique, participer à des projets concrets et contribuer à des infrastructures réseau performantes.",
+      desc:"Malaisienne passionnée par la découverte du monde, j'ai choisi de poursuivre mes études en France pour m'ouvrir à de nouvelles cultures et relever de nouveaux défis. Étudiante en BUT Réseaux & Télécommunications, je construis progressivement mon expertise en routage, switching et services réseau. Curieuse et motivée, j'aime combiner compétences techniques et créativité à travers la conception web et la création de contenu numérique. En dehors de mes études, je gère une chaîne YouTube consacrée à mon quotidien, ce qui me permet de développer mes compétences en communication, en montage vidéo et en gestion de projets personnels. À la recherche d'un stage en administration des réseaux, je souhaite mettre mes connaissances en pratique et contribuer à des infrastructures réseau performantes.",
       trait1:"rigoureuse", trait2:"curieuse", trait3:"organisée",
       email:"ainulsmz06@gmail.com", social:"LinkedIn", location:"France",
       cta1:"Voir les projets", cta2:"Me contacter"
@@ -139,7 +139,7 @@ const i18n = {
       tag:"about", hello:"Hello ✿",
       name:"Ainul Nafisah BINTI ABD MALIK",
       title:"Ainul Nafisah BINTI ABD MALIK",
-      desc:"Networks & Telecommunications student building strong fundamentals in routing, switching, network services and troubleshooting. Looking for an internship in France to contribute to real network operations, documentation and service reliability.",
+      desc:"Originally from Malaysia, I chose to come to France to discover the world, embrace new cultures and challenge myself in an international environment. I am currently studying Networks & Telecommunications, building strong fundamentals in routing, switching and network services. Curious and motivated, I enjoy combining technical skills with creativity through web design and digital content creation. Outside of my studies, I run a YouTube channel which helps me develop my communication, video editing and project management skills. I am looking for an internship in network administration to put my knowledge into practice and contribute to real infrastructure projects.",
       trait1:"reliable", trait2:"curious", trait3:"organized",
       email:"ainulsmz06@gmail.com", social:"LinkedIn", location:"France",
       cta1:"See projects", cta2:"Contact me"
