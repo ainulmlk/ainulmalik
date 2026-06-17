@@ -62,7 +62,7 @@ const i18n = {
         b2:"Intégré un mode bilingue FR/EN et un thème clair/sombre",
         b3:"Déployé sur GitHub Pages avec animations et cartes interactives",
         competences:"Développement front-end · UI/UX · Git/GitHub · Résolution de problèmes · Autonomie",
-        avis:"Ce projet m'a appris à transformer une idée créative en produit fonctionnel et professionnel. Il m'a montré l'importance de penser à l'utilisateur final — ici, le recruteur — à chaque décision de design."
+        avis:"Ce projet m'a appris à transformer une idée créative en produit fonctionnel et professionnel. Il m'a montré l'importance de penser à l'utilisateur final — ici, le recruteur — à chaque décision de design. Ce qui me plaît particulièrement, c'est de pouvoir modifier et améliorer mon portfolio en continu : c'est quelque chose de concret qui me représente vraiment."
       },
       p2:{
         title:"Enterprise Network Admin",
@@ -80,7 +80,7 @@ const i18n = {
         b2:"Développé une ligne éditoriale cohérente autour du storytelling personnel",
         b3:"Géré tous les aspects de la production : script, tournage, montage, publication",
         competences:"Communication · Storytelling visuel · Créativité · Rigueur · Planification · Confiance en soi",
-        avis:"Ce projet m'a permis de développer ma créativité et ma discipline de manière concrète. J'ai compris que communiquer clairement — dans une vidéo ou un rapport technique — repose sur les mêmes qualités : structure, clarté et engagement.",
+        avis:"Ce projet m'a permis de développer ma créativité et ma discipline de manière concrète. J'ai compris que communiquer clairement — dans une vidéo ou un rapport technique — repose sur les mêmes qualités : structure, clarté et engagement. YouTube est aussi pour moi une plateforme d'expression personnelle : c'est l'endroit où je partage librement mes opinions et ma façon de voir les choses.",
         s1:"Créativité", s2:"Rigueur", s3:"Confiance"
       }
     },
@@ -161,7 +161,7 @@ const i18n = {
         b2:"Integrated FR/EN bilingual mode and light/dark theme",
         b3:"Deployed on GitHub Pages with animations and interactive cards",
         competences:"Front-end development · UI/UX · Git/GitHub · Problem solving · Autonomy",
-        avis:"This project taught me to turn a creative idea into a functional, professional product. It showed me the importance of thinking about the end user — the recruiter — in every design decision."
+        avis:"This project taught me to turn a creative idea into a functional, professional product. It showed me the importance of thinking about the end user — the recruiter — in every design decision. What I enjoy most is continuously editing and improving it: it's something concrete that genuinely represents who I am."
       },
       p2:{
         title:"Enterprise Network Admin",
@@ -179,7 +179,7 @@ const i18n = {
         b2:"Developed a coherent editorial line around personal storytelling",
         b3:"Managed all aspects of production: script, filming, editing, publishing",
         competences:"Communication · Visual storytelling · Creativity · Rigour · Planning · Self-confidence",
-        avis:"This project helped me develop my creativity and discipline in a concrete way. I realised that communicating clearly — in a video or a technical report — relies on the same qualities: structure, clarity and engagement.",
+        avis:"This project helped me develop my creativity and discipline in a concrete way. I realised that communicating clearly — in a video or a technical report — relies on the same qualities: structure, clarity and engagement. YouTube is also a platform for me to express my opinions freely and share my personal perspective with the world.",
         s1:"Creativity", s2:"Rigour", s3:"Confidence"
       }
     },
