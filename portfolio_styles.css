@@ -480,11 +480,11 @@ h1,h2,h3,h4 { font-weight: 900; line-height: 1.18; }
 .proj3-back-header--blue  { background:rgba(138,167,255,.10); }
 .proj3-back-header--pink  { background:rgba(255,150,175,.10); }
 .proj3-icon { font-size:20px; opacity:.75; }
-.proj3-back-header h4 { margin:0; font-size:14px; font-weight:900; }
+.proj3-back-header h4 { margin:0; font-size:15px; font-weight:900; }
 .proj3-back-body { flex:1; overflow-y:auto; padding:10px 18px; display:flex; flex-direction:column; gap:10px; }
-.proj3-back-block p { margin:0 0 4px; font-size:13px; line-height:1.4; }
-.proj3-back-block ul { margin:4px 0 0 16px; padding:0; font-size:12px; opacity:.88; line-height:1.55; }
-.proj3-back-label { font-size:10px !important; font-weight:900 !important; letter-spacing:1px !important; text-transform:uppercase; opacity:.5 !important; margin-bottom:4px !important; }
+.proj3-back-block p { margin:0 0 4px; font-size:14px; line-height:1.5; }
+.proj3-back-block ul { margin:4px 0 0 16px; padding:0; font-size:13px; opacity:.88; line-height:1.6; }
+.proj3-back-label { font-size:11px !important; font-weight:900 !important; letter-spacing:1px !important; text-transform:uppercase; opacity:.5 !important; margin-bottom:4px !important; }
 .proj3-cta { display:block; margin:0 18px 16px; padding:10px; text-align:center; border-radius:12px; font-weight:900; font-size:13px; border:1px solid rgba(255,255,255,.13); background:rgba(255,255,255,.07); transition:transform .15s, background .15s; flex-shrink:0; }
 .proj3-cta:hover { transform:translateY(-2px); background:rgba(255,255,255,.12); }
 .proj3-cta--green { border-color:rgba(157,255,157,.3); }
@@ -713,7 +713,7 @@ h1,h2,h3,h4 { font-weight: 900; line-height: 1.18; }
 
 /* ---- Card back: teacher sections ---- */
 .proj3-back-competences {
-  font-size: 12px;
+  font-size: 13px;
   opacity: .85;
   line-height: 1.6;
   font-weight: 700;
@@ -732,7 +732,7 @@ h1,h2,h3,h4 { font-weight: 900; line-height: 1.18; }
   border-left-color: rgba(10,10,20,.12);
 }
 .proj3-back-quote {
-  font-size: 12px !important;
+  font-size: 13px !important;
   opacity: .8;
   font-style: italic;
   line-height: 1.55;
