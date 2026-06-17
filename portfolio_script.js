@@ -53,13 +53,16 @@ const i18n = {
       objectif:"Objectif", whatIdid:"Ce que j'ai fait", skills:"Compétences",
       context:"Contexte", tools:"Outils", transferable:"Compétences transférables",
       visitSite:"Visiter le site ↗", openProof:"Voir la topologie ↗", visitChannel:"Voir la chaîne ↗",
+      presentation:"Présentation & enjeux", competences:"Compétences mises en œuvre", avis:"Mon point de vue",
       p1:{
-        title:"Interactive Portfolio Website",
-        desc:"Portfolio bilingue responsive conçu et développé en HTML, CSS et JavaScript.",
-        objective:"Créer un portfolio interactif et bilingue pour présenter mon profil à des recruteurs en France.",
-        b1:"Design responsive + animations scroll + flip cards",
-        b2:"Mode bilingue FR/EN + thème clair/sombre",
-        b3:"Déploiement GitHub Pages"
+        title:"Création d'un site web portfolio",
+        desc:"Site web personnel interactif et bilingue, conçu pour présenter mon profil à des recruteurs.",
+        presentation:"En tant qu'étudiante internationale en recherche de stage en France, j'avais besoin d'un outil de communication professionnel accessible à des recruteurs francophones et anglophones. L'enjeu était double : démontrer mes compétences techniques en développement web tout en reflétant ma personnalité.",
+        b1:"Conçu et développé un portfolio en HTML, CSS et JavaScript pur",
+        b2:"Intégré un mode bilingue FR/EN et un thème clair/sombre",
+        b3:"Déployé sur GitHub Pages avec animations et cartes interactives",
+        competences:"Développement front-end · UI/UX · Git/GitHub · Résolution de problèmes · Autonomie",
+        avis:"Ce projet m'a appris à transformer une idée créative en produit fonctionnel et professionnel. Il m'a montré l'importance de penser à l'utilisateur final — ici, le recruteur — à chaque décision de design."
       },
       p2:{
         title:"Enterprise Network Admin",
@@ -71,10 +74,13 @@ const i18n = {
       },
       p3:{
         title:"YouTube Content Creation",
-        desc:"Contenu lifestyle et storytelling axé sur la régularité et l'engagement.",
-        b1:"Communication claire et storytelling visuel",
-        b2:"Régularité, planification, gestion de contenu",
-        b3:"Montage vidéo + compréhension de l'audience",
+        desc:"Création de contenu lifestyle et storytelling, axée sur la régularité et l'engagement.",
+        presentation:"Je gère une chaîne YouTube depuis plusieurs années. L'enjeu principal est de maintenir une régularité de publication tout en construisant une relation authentique avec mon audience, dans un environnement entièrement autonome et autodidacte.",
+        b1:"Planifié, filmé et monté des vidéos de manière régulière et autonome",
+        b2:"Développé une ligne éditoriale cohérente autour du storytelling personnel",
+        b3:"Géré tous les aspects de la production : script, tournage, montage, publication",
+        competences:"Communication · Storytelling visuel · Créativité · Rigueur · Planification · Confiance en soi",
+        avis:"Ce projet m'a permis de développer ma créativité et ma discipline de manière concrète. J'ai compris que communiquer clairement — dans une vidéo ou un rapport technique — repose sur les mêmes qualités : structure, clarté et engagement.",
         s1:"Créativité", s2:"Rigueur", s3:"Confiance"
       }
     },
@@ -146,13 +152,16 @@ const i18n = {
       objectif:"Objective", whatIdid:"What I did", skills:"Skills",
       context:"Context", tools:"Tools", transferable:"Transferable skills",
       visitSite:"Visit live website ↗", openProof:"View topology ↗", visitChannel:"Visit channel ↗",
+      presentation:"Context & stakes", competences:"Skills demonstrated", avis:"My take",
       p1:{
-        title:"Interactive Portfolio Website",
-        desc:"Responsive bilingual portfolio designed and built with HTML, CSS and JavaScript.",
-        objective:"Build an interactive bilingual portfolio to showcase my profile to recruiters in France.",
-        b1:"Responsive design + scroll animations + flip cards",
-        b2:"Bilingual FR/EN mode + light/dark theme toggle",
-        b3:"Deployed on GitHub Pages"
+        title:"Portfolio Website",
+        desc:"Personal interactive bilingual website built to present my profile to recruiters.",
+        presentation:"As an international student looking for an internship in France, I needed a professional communication tool for both French and English-speaking recruiters. The challenge was twofold: demonstrate my technical web skills while reflecting my personality.",
+        b1:"Designed and built a portfolio in HTML, CSS and pure JavaScript",
+        b2:"Integrated FR/EN bilingual mode and light/dark theme",
+        b3:"Deployed on GitHub Pages with animations and interactive cards",
+        competences:"Front-end development · UI/UX · Git/GitHub · Problem solving · Autonomy",
+        avis:"This project taught me to turn a creative idea into a functional, professional product. It showed me the importance of thinking about the end user — the recruiter — in every design decision."
       },
       p2:{
         title:"Enterprise Network Admin",
@@ -164,10 +173,13 @@ const i18n = {
       },
       p3:{
         title:"YouTube Content Creation",
-        desc:"Lifestyle and storytelling content focused on consistency and audience engagement.",
-        b1:"Clear communication and visual storytelling",
-        b2:"Consistency, content planning and management",
-        b3:"Video editing + audience understanding",
+        desc:"Lifestyle and storytelling content creation, focused on consistency and engagement.",
+        presentation:"I have been managing a YouTube channel for several years. The main challenge is maintaining a consistent publishing schedule while building an authentic relationship with my audience, in a fully self-taught and autonomous environment.",
+        b1:"Planned, filmed and edited videos consistently and independently",
+        b2:"Developed a coherent editorial line around personal storytelling",
+        b3:"Managed all aspects of production: script, filming, editing, publishing",
+        competences:"Communication · Visual storytelling · Creativity · Rigour · Planning · Self-confidence",
+        avis:"This project helped me develop my creativity and discipline in a concrete way. I realised that communicating clearly — in a video or a technical report — relies on the same qualities: structure, clarity and engagement.",
         s1:"Creativity", s2:"Rigour", s3:"Confidence"
       }
     },

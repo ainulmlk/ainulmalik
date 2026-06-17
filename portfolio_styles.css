@@ -710,3 +710,30 @@ h1,h2,h3,h4 { font-weight: 900; line-height: 1.18; }
 [data-theme="light"] .note-dot {
   background: linear-gradient(135deg, #1e8a2e, #2da83f);
 }
+
+/* ---- Card back: teacher sections ---- */
+.proj3-back-competences {
+  font-size: 12px;
+  opacity: .85;
+  line-height: 1.6;
+  font-weight: 700;
+  color: var(--accent);
+}
+[data-theme="light"] .proj3-back-competences { color: #1e6b24; }
+
+.proj3-back-avis {
+  background: rgba(255,255,255,.04);
+  border-left: 3px solid rgba(255,255,255,.15);
+  border-radius: 0 8px 8px 0;
+  padding: 8px 10px !important;
+}
+[data-theme="light"] .proj3-back-avis {
+  background: rgba(10,10,20,.03);
+  border-left-color: rgba(10,10,20,.12);
+}
+.proj3-back-quote {
+  font-size: 12px !important;
+  opacity: .8;
+  font-style: italic;
+  line-height: 1.55;
+}
