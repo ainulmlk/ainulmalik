@@ -40,7 +40,10 @@ const i18n = {
       tag:"à propos", hello:"Hello ✿",
       name:"Ainul Nafisah BINTI ABD MALIK",
       title:"Ainul Nafisah BINTI ABD MALIK",
-      desc:"Étudiante en BUT Réseaux & Télécommunications originaire de Malaisie, je suis passionnée par les technologies réseau, la communication et la création de projets interactifs. Curieuse et créative, j’aime comprendre le fonctionnement des systèmes tout en cherchant des façons simples et humaines de les rendre accessibles. En dehors de la technique, j’apprécie la création de contenu, le design visuel et le storytelling..",
+      desc:" Étudiante malaisienne en BUT Réseaux & Télécommunications en France, je construis progressivement mon expertise en routage, switching et services réseau. Curieuse et motivée, j'aime combiner compétences techniques et créativité à travers la conception web et la création de contenu numérique.
+En dehors de mes études, je gère une chaîne YouTube consacrée à mon quotidien, ce qui me permet de développer mes compétences en communication, en montage vidéo et en gestion de projets personnels.
+À la recherche d'un stage en administration des réseaux, je souhaite mettre mes connaissances en pratique, participer à des projets concrets et contribuer à des infrastructures réseau performantes.
+Passionnée par les enjeux de société, la protection animale et le jardinage, je suis toujours ouverte à l'apprentissage et aux nouvelles expériences.",
       trait1:"rigoureuse", trait2:"curieuse", trait3:"organisée",
       email:"ainulsmz06@gmail.com", social:"LinkedIn", location:"France",
       cta1:"Voir les projets", cta2:"Me contacter"
