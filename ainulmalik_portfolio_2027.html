@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en" data-l="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ainul Malik — Portfolio 2027</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courier+Prime:wght@400;700&family=VT323&display=swap">
+<style>
+:root{--sky:#efe9d8;--pink:#e0578a;--yel:#e8c547;--mint:#a9bd55;--lil:#57c3dc;--ink:#2f3320;--card:#fffdf6;--olv:#8fa83c;--dol:#5d6e2a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--sky:#d8d1bb}}
+:root[data-theme="dark"]{--sky:#d8d1bb}
+*{box-sizing:inherit}
+html,body{height:100%;margin:0;overflow:hidden;background:var(--sky);color:var(--ink);font:400 17px/1.5 "Courier Prime","Courier New",monospace}
+html[data-l="fr"] .en,html[data-l="en"] .fr{display:none!important}
+.dots{background:radial-gradient(#ffffff55 2px,transparent 3px) 0 0/30px 30px,var(--sky)}
+#lang{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:12px;z-index:300;display:flex;border:3px solid var(--ink);border-radius:999px;overflow:hidden;box-shadow:3px 3px 0 var(--ink)}
+#lang button{border:0;background:#fff;font:600 14px "Courier Prime","Courier New",monospace;padding:5px 12px;cursor:pointer;color:var(--ink)}
+#lang button.on{background:var(--yel)}
+.layer{position:fixed;inset:0;z-index:100;background:#1c2113;color:#f1ecdd;font:26px/1.15 VT323,"Courier New",monospace;transition:opacity .6s}
+.layer.off{opacity:0;pointer-events:none}
+#boot{display:flex;align-items:center;justify-content:center}
+.bx{border:8px solid var(--mint);padding:26px 30px;min-width:min(520px,90vw);text-align:center;box-shadow:8px 8px 0 var(--dol)}
+#bt{white-space:pre-line;text-align:left;margin:0 0 20px;min-height:2.4em;font-size:27px}
+#start{background:var(--yel);color:var(--ink);border:4px solid #fff;font:inherit;font-size:27px;padding:4px 16px;cursor:pointer;opacity:0}
+#start:hover{background:var(--pink);color:#fff}
+#bios{white-space:pre;padding:48px 4vw;margin:0;overflow:hidden;font-size:clamp(17px,2.4vw,25px)}
+#bios .ft{position:absolute;left:4vw;bottom:5vh;color:var(--yel)}
+#gl{position:fixed;inset:0;width:100%;height:100%;opacity:0;transition:opacity 1.2s}#gl.on{opacity:1}
+.fl{position:absolute;animation:fl 6s ease-in-out infinite;user-select:none;pointer-events:none}
+@keyframes fl{50%{transform:translateY(-16px) rotate(12deg)}}
+.tag{position:fixed;left:clamp(16px,5vw,80px);background:var(--ink);color:var(--yel);font:600 clamp(16px,2.4vw,26px) "Courier Prime","Courier New",monospace;padding:3px 18px;min-height:1.6em;opacity:0;z-index:5;border-radius:8px;box-shadow:4px 4px 0 var(--mint)}
+.tag.on{opacity:1}
+#t1{top:calc(env(safe-area-inset-top,0px) + 12vh)}#t2{top:calc(env(safe-area-inset-top,0px) + 12vh + 2.4em)}
+#hint{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 8vh);transform:translateX(-50%);background:var(--yel);color:var(--ink);border:4px solid var(--ink);border-radius:999px;box-shadow:4px 4px 0 var(--ink);font:600 18px "Courier Prime","Courier New",monospace;padding:6px 22px;opacity:0;transition:opacity .6s;pointer-events:none;white-space:nowrap;z-index:5}
+#hint.on{opacity:1;animation:pu 1.4s ease-in-out infinite}
+@keyframes pu{50%{transform:translateX(-50%) scale(1.07)}}
+.pg{display:none}.pg.on{display:block;animation:pop .55s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{from{opacity:0;transform:scale(.92) translateY(14px)}}
+h2{font:400 clamp(34px,6vw,54px)/1.05 "Alfa Slab One",Georgia,serif;margin:0 0 12px;color:var(--ink)}
+h3{font:600 20px "Courier Prime","Courier New",monospace;margin:18px 0 2px}
+p{margin:0 0 12px;max-width:62ch}
+.scr2{font:700 24px "Courier Prime","Courier New",monospace;color:var(--pink)}
+.home{text-align:center;position:relative;padding:20px 0 6px}
+.home h2{font-size:clamp(44px,9vw,92px)}
+.burst{display:none;position:absolute;right:-2%;top:-10%;width:clamp(100px,20vw,170px);transform:rotate(12deg);animation:wob 3s ease-in-out infinite}
+.burst text{font:400 34px "Alfa Slab One",Georgia,serif;fill:var(--ink)}
+@keyframes wob{50%{transform:rotate(-6deg) scale(1.06)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chip{border:3px solid var(--ink);border-radius:999px;padding:1px 12px;font-weight:600;font-size:15px;background:#eef3d2}
+.chip:nth-child(4n+2){background:#fdf0c2}.chip:nth-child(4n+3){background:#fbdde7}.chip:nth-child(4n+4){background:#d8f0f6}
+.tl{border-left:4px dashed var(--ink);padding-left:18px;margin:14px 0 8px 6px}
+.tl h3{margin-top:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:14px}
+.pj{border:4px solid var(--ink);border-radius:20px;padding:14px 16px;box-shadow:5px 5px 0 var(--ink);transition:.2s}
+.pj:hover{transform:rotate(-1.5deg) translateY(-4px)}
+.pj:nth-child(1){background:#fbdde7}.pj:nth-child(2){background:#fdf0c2}.pj:nth-child(3){background:#eef3d2}.pj:nth-child(4){background:#d8f0f6}
+.pj b{font:400 20px "Alfa Slab One",Georgia,serif;display:block;margin-bottom:4px}.pj p{font-size:15px;margin:0 0 6px}.pj small{font-weight:600}
+.ct a{color:var(--ink);font-weight:600}
+.ping button{background:var(--pink);color:#fff;border:3px solid var(--ink);border-radius:999px;padding:5px 16px;font:600 16px "Courier Prime","Courier New",monospace;box-shadow:3px 3px 0 var(--ink);cursor:pointer}
+.ping button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.ping pre{margin:10px auto 0;text-align:left;background:var(--ink);color:var(--mint);border-radius:12px;padding:8px 12px;font:14px/1.5 ui-monospace,Menlo,monospace;min-height:2em;max-width:520px;overflow:auto;white-space:pre-wrap}
+.sp{position:fixed;pointer-events:none;z-index:400;font-style:normal;font-size:18px;transform:translate(-50%,-50%);animation:spk .9s forwards}
+@keyframes spk{to{opacity:0;transform:translate(-50%,40%) scale(.3) rotate(120deg)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.os{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:radial-gradient(#f1ecdd,#8b8a72);opacity:0;pointer-events:none;transition:opacity .9s}
+.os.on{opacity:1;pointer-events:auto}
+.scr{position:relative;width:min(97vw,1200px);height:min(90vh,860px);border:14px solid #e6e0cd;background:radial-gradient(#ffffff40 3px,transparent 4px) 0 0/34px 34px,#8fa83c;border-radius:26px;box-shadow:0 0 0 5px var(--ink),0 20px 80px #0008;overflow:hidden}
+.scr::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:6;background:repeating-linear-gradient(0deg,#0000 0 2px,#2a1a3a0d 2px 3px),radial-gradient(transparent 65%,#2a1a3a33)}
+.icons{position:absolute;left:12px;top:16px;display:grid;gap:16px;width:66px;color:#fff;font:700 11px/1.1 "Courier Prime",monospace;text-align:center;text-shadow:1px 1px var(--ink)}
+.ic i{display:block;width:34px;height:34px;margin:0 auto 4px;background:var(--yel);border:3px solid var(--ink);border-radius:8px;font:normal 13px/28px "Alfa Slab One",Georgia,serif;color:var(--ink)}
+.ic:nth-child(2) i{background:var(--mint)}.ic:nth-child(3) i{background:var(--lil)}.ic:nth-child(4) i{background:#fff}
+.win{position:absolute;left:90px;right:16px;top:14px;bottom:44px;z-index:3;background:var(--card);border:3px solid;border-color:#fff var(--ink) var(--ink) #fff;box-shadow:6px 6px 0 var(--ink);display:flex;flex-direction:column;transform:scale(.96);transition:transform .8s .2s}
+#os.on .win{transform:none}
+.tb{background:linear-gradient(90deg,var(--dol),var(--olv));color:#fff;padding:3px 6px;display:flex;justify-content:space-between;align-items:center;font:700 13px "Courier Prime","Courier New",monospace;border-bottom:3px solid var(--ink);text-shadow:1px 1px var(--ink)}
+.tb button{width:20px;height:18px;padding:0;margin-left:3px;background:var(--yel);border:2px solid var(--ink);font:700 11px/1 monospace;cursor:pointer;color:var(--ink)}
+.tb button#close:hover{background:var(--pink);color:#fff}
+.body{flex:1;display:flex;min-height:0}
+.side{width:210px;flex-shrink:0;padding:24px 18px;border-right:3px dashed var(--ink);overflow:auto}
+.side h1{font:400 28px/1 "Alfa Slab One",Georgia,serif;margin:0 0 8px;color:var(--ink)}
+.side small{font:700 16px "Courier Prime","Courier New",monospace}
+.nv{margin-top:34px}
+.nv a{display:block;margin:16px 0;color:#4f6b1a;font:700 15px "Courier Prime","Courier New",monospace;text-decoration:underline;cursor:pointer}
+.nv a:hover{color:var(--pink)}.nv a.on::before{content:"♥ ";color:var(--pink)}
+.main{flex:1;overflow:auto;padding:26px 36px 40px}
+.tk{position:absolute;left:0;right:0;bottom:0;height:34px;z-index:5;background:#e6e0cd;border-top:3px solid var(--ink);display:flex;align-items:center;gap:8px;padding:0 6px}
+.tk b,.tk em{font:700 12px "Courier Prime",monospace;font-style:normal;border:2px solid;border-color:#fff var(--ink) var(--ink) #fff;padding:3px 10px;cursor:pointer;background:var(--pink);color:#fff}
+.tk em{flex:1;max-width:200px;border-color:var(--ink) #fff #fff var(--ink);cursor:default;font-weight:400;background:var(--card);color:var(--ink)}
+.tk time{margin-left:auto;font:700 12px "Courier Prime",monospace;padding-right:6px}
+.oc{position:absolute;bottom:30px;width:clamp(48px,8vw,86px);aspect-ratio:100/90;z-index:7;animation:wob 3.4s ease-in-out infinite;pointer-events:none}
+@media(max-width:760px){.icons{display:none}.win{left:6px;right:6px}.body{flex-direction:column}.side{width:auto;padding:12px 14px;border-right:0;border-bottom:3px dashed var(--ink)}.side h1{font-size:22px;margin:0}.side small{font-size:13px}.nv{margin:6px 0 0;display:flex;flex-wrap:wrap;gap:0 14px}.nv a{margin:6px 0;font-size:13px}.main{padding:18px}.scr{border-width:8px}.burst{display:none}}
+
+/* plain-text hint + name tags */
+#hint{background:none;border:0;box-shadow:none;padding:6px 10px;font-size:20px;font-weight:700;color:var(--ink);letter-spacing:.04em;text-shadow:0 0 8px #efe9d8,0 0 2px #efe9d8}
+.tag{background:none;box-shadow:none;border-radius:0;padding:0 4px;color:var(--ink);font:700 clamp(18px,2.6vw,30px) "Courier Prime","Courier New",monospace;text-shadow:0 0 10px #efe9d8,0 0 3px #efe9d8}
+#t1{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;font-size:clamp(26px,4vw,48px)}
+/* classic window */
+.win{left:58px;right:12px;top:12px;bottom:40px;background:#e6e0cd;border:2px solid;border-color:#fff #6b6a55 #6b6a55 #fff;box-shadow:0 0 0 1px var(--ink);padding:2px}
+.tb{background:linear-gradient(90deg,#4a5a1f,#8fa83c);border:0;padding:2px 4px;font:700 12px "Courier Prime","Courier New",monospace;text-shadow:none}
+.tb button{width:18px;height:16px;margin-left:2px;background:#e6e0cd;border:2px solid;border-color:#fff #6b6a55 #6b6a55 #fff;font:700 10px/1 "Courier Prime",monospace;color:var(--ink)}
+.tb button:active{border-color:#6b6a55 #fff #fff #6b6a55}
+.tb button#close:hover{background:#e6e0cd;color:var(--ink)}
+.body{margin-top:2px;background:var(--card);border:2px solid;border-color:#6b6a55 #fff #fff #6b6a55}
+.side{width:210px;border-right:0;padding:26px 20px 20px 26px}
+.nv a{color:#3d5a14}.nv a:hover{color:#8a2f52}.nv a.on::before{content:"◦ ";color:#3d5a14}
+.sb{margin-top:2px;display:flex;gap:2px;font:12px "Courier Prime",monospace}
+.sb span{border:1px solid;border-color:#6b6a55 #fff #fff #6b6a55;padding:1px 6px;min-width:40px}.sb span:first-child{flex:1}
+.tk{background:#e6e0cd;border-top:2px solid #fff;box-shadow:0 -1px 0 #6b6a55}
+.tk b{background:#e6e0cd;color:var(--ink);border-color:#fff #6b6a55 #6b6a55 #fff}
+.tk em{background:#f1ecdd;border-color:#6b6a55 #fff #fff #6b6a55}
+.tk time{border:1px solid;border-color:#6b6a55 #fff #fff #6b6a55;padding:2px 8px;margin-right:2px}
+/* flatter content */
+.chip{border:1px solid #6b6a55;border-radius:0;padding:0 8px;font-weight:700;font-size:14px}
+.pj{border:1px solid #6b6a55;border-radius:0;box-shadow:none}.pj:hover{transform:none}
+.ping button{border-radius:0;border:2px solid;border-color:#fff #6b6a55 #6b6a55 #fff;background:#e6e0cd;color:var(--ink);box-shadow:none}
+.ping button:active{border-color:#6b6a55 #fff #fff #6b6a55;transform:none}
+.ping pre{border-radius:0;background:#1c2113;color:#a9bd55}
+/* centered home like the original */
+.home{padding:0}.home h2{font-size:clamp(44px,8vw,84px);margin:0}
+.home .sub{font:400 clamp(16px,2.2vw,24px) "Alfa Slab One",Georgia,serif;margin:6px 0 30px;letter-spacing:.04em}
+.lk{margin-bottom:26px}.lk a{margin:0 12px;color:#3d5a14;font-weight:700;text-decoration:underline;cursor:pointer}.lk a:hover{color:#8a2f52}
+.win.home .side{display:none}.win.home .main{display:flex;flex-direction:column}.win.home .pg.on{margin:auto;text-align:center}
+@media(max-width:760px){.win{left:6px}.side{padding:12px 14px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="cat" viewBox="0 0 100 90">
+<path d="M14 40 L16 6 L40 24 Z M86 40 L84 6 L60 24 Z" fill="#f59a3c" stroke="#2a1a3a" stroke-width="4" stroke-linejoin="round"/>
+<path d="M21 30 L22 15 L32 24Z M79 30 L78 15 L68 24Z" fill="#ffb3c9"/>
+<ellipse cx="50" cy="52" rx="42" ry="34" fill="#f59a3c" stroke="#2a1a3a" stroke-width="4"/>
+<path d="M44 22 L46 31 M50 20 L50 30 M56 22 L54 31" stroke="#d9741f" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="50" cy="64" rx="18" ry="13" fill="#fff"/><circle cx="26" cy="63" r="6" fill="#ff8fb5" opacity=".6"/><circle cx="74" cy="63" r="6" fill="#ff8fb5" opacity=".6"/>
+<circle cx="33" cy="50" r="5.5" fill="#2a1a3a"/><circle cx="67" cy="50" r="5.5" fill="#2a1a3a"/><circle cx="31" cy="48" r="2" fill="#fff"/><circle cx="65" cy="48" r="2" fill="#fff"/>
+<path d="M46 58 h8 l-4 5z" fill="#ff5fa2"/><path d="M50 63 v3 M50 66 q-5 5 -10 1 M50 66 q5 5 10 1" stroke="#2a1a3a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M22 56 h-15 M22 62 l-14 4 M78 56 h15 M78 62 l14 4" stroke="#2a1a3a" stroke-width="2.5" stroke-linecap="round"/></symbol></svg>
+
+<div id="lang"><button data-l="fr">FR</button><button data-l="en" class="on">EN</button></div>
+
+<canvas id="gl"></canvas>
+<div class="tag" id="t1"></div><div class="tag" id="t2"></div>
+<div id="hint"><span class="en">Click anywhere to begin</span><span class="fr">Clique n’importe où pour commencer</span></div>
+
+<div id="boot" class="layer"><div class="bx"><p id="bt"></p><button id="start"><span class="en">START</span><span class="fr">DÉMARRER</span></button></div></div>
+<pre id="bios" class="layer off"></pre>
+
+<div id="os" class="os"><div class="scr dots"><div id="fl2"></div>
+  <div class="icons"><div class="ic"><i>A</i>My Showcase</div><div class="ic"><i>&gt;_</i>Terminal</div><div class="ic"><i>CV</i>Resume</div><div class="ic"><i>R&amp;T</i>IUT Nice</div></div>
+  <div class="win home"><div class="tb"><span>Ainul Malik - Showcase 2026</span><span><button>_</button><button>□</button><button id="close">X</button></span></div>
+    <div class="body"><div class="side"><h1>Ainul<br>Malik</h1><small>Showcase ’26</small>
+      <nav class="nv"><a data-p="home" class="on"><span class="en">HOME</span><span class="fr">ACCUEIL</span></a><a data-p="about"><span class="en">ABOUT</span><span class="fr">À PROPOS</span></a><a data-p="exp"><span class="en">EXPERIENCE</span><span class="fr">PARCOURS</span></a><a data-p="proj"><span class="en">PROJECTS</span><span class="fr">PROJETS</span></a><a data-p="contact">CONTACT</a></nav></div>
+      <div class="main"><section class="pg on" id="home"><div class="home"><h2>Ainul Malik</h2><div class="sub"><span class="en">Networks &amp; Telecom Student</span><span class="fr">Étudiant·e en Réseaux &amp; Télécoms</span></div>
+      <div class="lk"><a data-p="about"><span class="en">ABOUT</span><span class="fr">À PROPOS</span></a><a data-p="exp"><span class="en">EXPERIENCE</span><span class="fr">PARCOURS</span></a><a data-p="proj"><span class="en">PROJECTS</span><span class="fr">PROJETS</span></a><a data-p="contact">CONTACT</a></div>
+      <div class="ping"><button id="pg">ping mimi</button><pre id="po">$ _</pre></div></div></section>
+    <section class="pg" id="about"><h2><span class="en">Hello, I’m Ainul!</span><span class="fr">Salut, moi c’est Ainul !</span></h2>
+      <p class="en">I’m a second-year BUT Réseaux &amp; Télécommunications student at IUT Nice Côte d’Azur, looking for an internship or work-study (alternance) in networks, systems or cybersecurity.</p>
+      <p class="fr">Je suis en 2e année de BUT Réseaux &amp; Télécommunications à l’IUT de Nice Côte d’Azur, et je cherche un stage ou une alternance en réseaux, systèmes ou cybersécurité.</p>
+      <p class="en">Away from the keyboard you’ll find me with my plants, a cat on my lap, or somewhere in nature. I build networks the way I grow a garden: patiently, with care, and with a little chaos.</p>
+      <p class="fr">Loin du clavier, je suis avec mes plantes, un chat sur les genoux ou quelque part dans la nature. Je construis des réseaux comme je fais pousser un jardin : avec patience, avec soin, et un peu de chaos.</p>
+      <div class="chips"><span class="chip"> <span class="en">Gardening</span><span class="fr">Jardinage</span></span><span class="chip"> <span class="en">Cats</span><span class="fr">Chats</span></span><span class="chip"> Nature</span><span class="chip"> <span class="en">Networks</span><span class="fr">Réseaux</span></span><span class="chip"> <span class="en">Cute things</span><span class="fr">Choses mignonnes</span></span></div></section>
+    <section class="pg" id="exp"><h2><span class="en">Experience</span><span class="fr">Parcours</span></h2>
+      <div class="tl"><h3>BUT 2 R&amp;T — IUT Nice Côte d’Azur</h3><p class="en">2025 – 2026 · Routing &amp; switching, Linux/Windows servers, VoIP, security.</p><p class="fr">2025 – 2026 · Routage &amp; commutation, serveurs Linux/Windows, VoIP, sécurité.</p>
+      <h3>BUT 1 R&amp;T — IUT Nice Côte d’Azur</h3><p class="en">2024 – 2025 · Network fundamentals, cabling, Python, Bash.</p><p class="fr">2024 – 2025 · Bases des réseaux, câblage, Python, Bash.</p>
+      <h3 class="en">Next: internship / alternance </h3><h3 class="fr">Prochain : stage / alternance </h3><p class="en">Looking for a role in networks, systems or cybersecurity.</p><p class="fr">À la recherche d’un poste en réseaux, systèmes ou cybersécurité.</p></div>
+      <h3><span class="en">Toolbox</span><span class="fr">Ma boîte à outils</span></h3>
+      <div class="chips"><span class="chip">Cisco IOS</span><span class="chip">VLAN · STP</span><span class="chip">OSPF · BGP</span><span class="chip">Linux</span><span class="chip">Windows Server</span><span class="chip">Docker</span><span class="chip">Wireshark</span><span class="chip">GNS3</span><span class="chip">Zabbix</span><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">Git</span></div></section>
+    <section class="pg" id="proj"><h2><span class="en">Projects</span><span class="fr">Projets</span></h2><div class="grid">
+      <div class="pj"><b> <span class="en">Enterprise network</span><span class="fr">Réseau d’entreprise</span></b><p class="en">Multi-site topology with VLANs, inter-VLAN routing, OSPF and ACLs.</p><p class="fr">Topologie multi-sites : VLAN, routage inter-VLAN, OSPF et ACL.</p><small>Cisco · Packet Tracer</small></div>
+      <div class="pj"><b> <span class="en">Monitoring</span><span class="fr">Supervision</span></b><p class="en">Zabbix watching switches and servers over SNMP, with alerts.</p><p class="fr">Zabbix surveille switchs et serveurs via SNMP, avec alertes.</p><small>Zabbix · Linux · SNMP</small></div>
+      <div class="pj"><b> <span class="en">Secure access</span><span class="fr">Accès sécurisé</span></b><p class="en">WireGuard VPN on a home-lab server.</p><p class="fr">VPN WireGuard sur un serveur de home-lab.</p><small>WireGuard · Debian</small></div>
+      <div class="pj"><b> <span class="en">VoIP telephony</span><span class="fr">Téléphonie VoIP</span></b><p class="en">Asterisk PBX with SIP extensions and voicemail.</p><p class="fr">PBX Asterisk avec postes SIP et messagerie vocale.</p><small>Asterisk · SIP</small></div></div></section>
+    <section class="pg ct" id="contact"><h2><span class="en">Say hi!</span><span class="fr">Dis bonjour !</span></h2>
+      <p class="en">Open to internships, alternance, or just a chat about networks and plants.</p><p class="fr">Ouvert·e aux stages, alternances, ou juste pour parler réseaux et plantes.</p>
+      <p> <a href="mailto:ainul.malik@example.com">ainul.malik@example.com</a><br> <a href="#">linkedin.com/in/ainulmalik</a><br> <a href="#">github.com/ainulmalik</a><br> Nice, France</p>
+      <p><a href="#"> <span class="en">Download my resume</span><span class="fr">Télécharger mon CV</span></a></p></section></div></div><div class="sb"><span>© Copyright 2026 Ainul Malik</span><span></span><span></span></div></div>
+  <div class="tk"><b id="st">Start</b><em>My Showcase</em><time id="clk"></time></div>
+</div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+var $=function(s){return document.querySelector(s)},reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,Z=reduce?0:1,stage="boot",bd=false;
+var L=((navigator.language||"en").slice(0,2)==="fr")?"fr":"en";
+var D={en:{boot:"Ainul Malik Portfolio Showcase 2026\nClick start to begin _",t2:"Networks & Telecom"},fr:{boot:"Portfolio d’Ainul Malik — Showcase 2026\nClique sur démarrer _",t2:"Réseaux & Télécoms"}};
+function setLang(l){L=l;document.documentElement.dataset.l=l;document.documentElement.lang=l;
+  document.querySelectorAll("#lang button").forEach(function(b){b.classList.toggle("on",b.dataset.l===l)});if(bd)$("#bt").textContent=D[l].boot}
+document.querySelectorAll("#lang button").forEach(function(b){b.onclick=function(e){e.stopPropagation();setLang(b.dataset.l)}});setLang(L);
+function type(el,key,sp,cb){var i=0;(function t(){var s=D[L][key];el.textContent=s.slice(0,i++);if(i<=s.length)setTimeout(t,Z*sp);else if(cb)cb()})()}
+function scatter(box,n){var E=["","","","","","","","","",""];for(var i=0;i<n;i++){var s=document.createElement("span");s.className="fl";s.textContent=E[i%E.length];
+  s.style.cssText="left:"+Math.random()*96+"%;top:"+Math.random()*92+"%;font-size:"+(16+Math.random()*26)+"px;animation-delay:-"+Math.random()*6+"s;opacity:.85";box.appendChild(s)}}
+
+var pts=[];for(var i=0;i<28;i++){var a=i*Math.PI/14-Math.PI/2,r=i%2?68:96;pts.push((100+Math.cos(a)*r).toFixed(1)+","+(100+Math.sin(a)*r).toFixed(1))}
+document.querySelectorAll(".bp").forEach(function(p){p.setAttribute("points",pts.join(" "))});
+
+/* boot + bios */
+type($("#bt"),"boot",45,function(){bd=true;$("#start").style.opacity=1});
+$("#start").onclick=function(){
+  if(stage!=="boot")return;stage="bios";$("#boot").classList.add("off");$("#bios").classList.remove("off");
+  var d=new Date().toLocaleDateString("en-GB"),el=$("#bios"),i=0,out="",
+  Ls=["Ainul Malik Inc.      Released: 01/09/2024","PocketGarden BIOS (C)2026 Malik Ainul Inc.","","R&T S13 2024-2026 Special IUT06N","","Garden Console(tm) XX 113","Checking RAM : 16384 OK","Checking cats : 3 FOUND ","","LOADING RESOURCES (8/8).."],
+  It=["eth0 link","watering_can","vlan10.trunk","ospf.area0","seed_packet","wireguard.wg0","cat.purr","startup"];
+  It.forEach(function(n,k){Ls.push("   Loaded "+(n+"                ").slice(0,20)+"... "+Math.round((k+1)/It.length*100)+"%")});
+  var ft='<span class="ft">Press  to water the plants , ESC to skip nap\n'+d+"</span>";
+  (function nx(){if(i<Ls.length){out+=Ls[i++]+"\n";el.innerHTML=out.replace(/&/g,"&amp;")+ft;setTimeout(nx,Z*(i<11?110:230))}else setTimeout(enter,Z*700)})();
+};
+function enter(){$("#gl").classList.add("on");$("#bios").classList.add("off");stage="far";setTimeout(function(){$("#hint").classList.add("on")},Z*900)}
+
+/* ---------- 3D desk (calm palette) ---------- */
+var S=reduce?.01:1,R=new THREE.WebGLRenderer({canvas:$("#gl"),antialias:true}),sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(35,1,.1,60),look=new THREE.Vector3(),moving=false,base=new THREE.Vector3();
+var bg=new THREE.Color(getComputedStyle(document.documentElement).getPropertyValue("--sky").trim()||"#efe9d8");
+R.setPixelRatio(Math.min(devicePixelRatio||1,2));R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;sc.background=bg;sc.fog=new THREE.Fog(bg,9,26);
+function M(c,r,e){return new THREE.MeshStandardMaterial({color:c,roughness:r==null?.7:r,emissive:e||0})}
+function add(o,x,y,z){o.position.set(x,y,z);o.castShadow=o.receiveShadow=true;sc.add(o);return o}
+function B(w,h,d,m,x,y,z,ry){var o=add(new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m),x,y,z);if(ry)o.rotation.y=ry;return o}
+function RR(w,h,d,r,m,x,y,z,flat){var p=new THREE.Shape(),a=-w/2,b=-h/2,c=w/2,e=h/2;p.moveTo(a+r,b);p.lineTo(c-r,b);p.quadraticCurveTo(c,b,c,b+r);p.lineTo(c,e-r);p.quadraticCurveTo(c,e,c-r,e);p.lineTo(a+r,e);p.quadraticCurveTo(a,e,a,e-r);p.lineTo(a,b+r);p.quadraticCurveTo(a,b,a+r,b);
+  var g=new THREE.ExtrudeGeometry(p,{depth:d,bevelEnabled:true,bevelThickness:.015,bevelSize:.015,bevelSegments:3,curveSegments:8});g.translate(0,0,-d/2);var o=add(new THREE.Mesh(g,m),x,y,z);if(flat)o.rotation.x=-Math.PI/2;return o}
+function Sp(r,m,x,y,z,sx,sy,sz){var o=add(new THREE.Mesh(new THREE.SphereGeometry(r,20,14),m),x,y,z);o.scale.set(sx||1,sy||1,sz||1);return o}
+function Cn(r,h,m,x,y,z,rz){var o=add(new THREE.Mesh(new THREE.ConeGeometry(r,h,4),m),x,y,z);o.rotation.set(0,Math.PI/4,rz||0);return o}
+function Cy(rt,rb,h,m,x,y,z){return add(new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,20),m),x,y,z)}
+var fl=new THREE.Mesh(new THREE.CircleGeometry(40,48),M(0xe6dfca,1));fl.rotation.x=-Math.PI/2;fl.receiveShadow=true;sc.add(fl);
+/* shaggy olive rug */
+var rc=document.createElement("canvas");rc.width=rc.height=128;var rg=rc.getContext("2d"),rcol=["#7f9633","#8fa83c","#9fb84a","#b4c862","#6f8530"];rg.fillStyle="#8fa83c";rg.fillRect(0,0,128,128);
+for(var q=0;q<2600;q++){rg.fillStyle=rcol[q%5];rg.fillRect(Math.random()*128,Math.random()*128,2,2)}
+var rt=new THREE.CanvasTexture(rc);rt.wrapS=rt.wrapT=THREE.RepeatWrapping;rt.repeat.set(1.6,1.6);
+var rug=RR(5.4,3.9,.05,.5,new THREE.MeshStandardMaterial({map:rt,roughness:1}),0,.03,.35,true);rug.castShadow=false;
+var cr=M(0xf4efe2,.6),tan=M(0xc9b98f,.7),dol=M(0x5d6e2a,.6),ink=M(0x2f3320,.6),rose=M(0xe0578a,.5),must=M(0xe8c547,.6),tang=M(0xee8a47,.7),aqua=M(0x57c3dc,.5),olv=M(0xa9bd55,.6),wh=M(0xffffff,.5),T=.815;
+/* desk */
+B(2.6,.07,1.2,tan,0,.78,0);B(.7,.74,1.1,dol,-.95,.37,0);B(.14,.025,.03,cr,-.95,.55,.56);B(.14,.025,.03,cr,-.95,.3,.56);
+[.5,-.5].forEach(function(z){Cy(.035,.035,.78,ink,1.2,.39,z)});
+/* computer: rounded, simple */
+RR(.76,.18,.6,.07,cr,0,T+.1,-.1);B(.3,.035,.006,M(0x8a8a78),.12,T+.1,.22);Sp(.018,M(0xe0578a,.4,0xe0578a),-.27,T+.1,.225);
+Cy(.14,.18,.03,cr,0,1.02,-.15);RR(.74,.62,.5,.1,cr,0,1.34,-.2);RR(.6,.47,.02,.05,ink,0,1.37,.07);
+[[-.05,rose],[0,must],[.05,aqua]].forEach(function(d){Sp(.012,d[1],d[0],1.105,.072)});
+var cv=document.createElement("canvas");cv.width=512;cv.height=400;var g=cv.getContext("2d"),dc=["#e0578a","#e8c547","#ee8a47","#57c3dc","#a9bd55"];
+g.fillStyle="#8fa83c";g.fillRect(0,0,512,400);for(var u=0;u<40;u++){g.fillStyle="#ffffff30";g.beginPath();g.arc((u%8)*70+20,Math.floor(u/8)*86+20,7,0,6.283);g.fill()}
+g.fillStyle="#fffdf6";g.fillRect(44,30,424,320);g.fillStyle="#5d6e2a";g.fillRect(44,30,424,26);g.fillStyle="#2f3320";g.textAlign="center";g.font="bold 54px Georgia,serif";g.fillText("Ainul Malik",256,170);g.font="bold 22px Georgia,serif";g.fillText("Networks & Telecom",256,208);
+g.font="bold 15px Georgia,serif";g.fillStyle="#4f6b1a";g.fillText("ABOUT   EXPERIENCE   PROJECTS   CONTACT",256,262);dc.forEach(function(c,i){g.fillStyle=c;g.beginPath();g.arc(176+i*40,314,10,0,6.283);g.fill()});
+add(new THREE.Mesh(new THREE.PlaneGeometry(.5,.38),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(cv)})),0,1.37,.1);
+RR(.64,.22,.03,.04,cr,0,T+.02,.45,true);var kk=new THREE.InstancedMesh(new THREE.BoxGeometry(.036,.012,.032),M(0xffffff,.5),70),mx=new THREE.Matrix4(),pc=[0xffffff,0xffffff,0xe8c547,0xffffff,0xe0578a,0xffffff,0x57c3dc,0xffffff,0xee8a47,0xffffff,0xa9bd55];
+for(var r=0;r<5;r++)for(var c=0;c<14;c++){var q2=r*14+c;mx.setPosition(-.27+c*.042,T+.058,.38+r*.036);kk.setMatrixAt(q2,mx);kk.setColorAt(q2,new THREE.Color(pc[(q2*7)%pc.length]))}sc.add(kk);
+RR(.08,.12,.035,.03,cr,.45,T+.02,.47,true);
+/* desk things */
+Cy(.06,.055,.12,aqua,.95,T+.06,.2);var hd=new THREE.Mesh(new THREE.TorusGeometry(.035,.011,8,16),aqua);hd.position.set(1.01,T+.06,.2);sc.add(hd);
+B(.34,.05,.24,rose,.95,T+.025,-.3,.2);B(.3,.05,.22,aqua,.95,T+.075,-.3,-.1);B(.28,.05,.2,olv,.95,T+.125,-.3,.15);B(.3,.1,.22,wh,-.9,T+.05,.3);
+Cy(.09,.07,.14,cr,1.2,T+.07,-.05);for(var a=0;a<7;a++){var an=a/7*6.283,lf=Sp(.05,M(0x6f8a34,.6),1.2+Math.cos(an)*.1,T+.3,-.05+Math.sin(an)*.1,1,4,1.6);lf.rotation.set(Math.sin(an)*.7,0,-Math.cos(an)*.7)}
+/* the cat plush */
+var px=-.5,pz=-.2;Sp(.09,tang,px,T+.09,pz,1,1.1,1);Sp(.075,tang,px,T+.21,pz+.02);Cn(.03,.06,tang,px-.05,T+.29,pz+.02,.2);Cn(.03,.06,tang,px+.05,T+.29,pz+.02,-.2);Sp(.03,wh,px,T+.2,pz+.075);
+Sp(.009,ink,px-.03,T+.225,pz+.085);Sp(.009,ink,px+.03,T+.225,pz+.085);Sp(.008,rose,px,T+.212,pz+.105);var tl=Cy(.015,.015,.14,tang,px+.1,T+.06,pz);tl.rotation.z=1.2;
+/* original figurine: pale robe, dark sash + scarf */
+var fx=-.8,fz=-.32,robe=M(0xe4e7ea,.8),navy=M(0x2a3050,.6),skin=M(0xf0c8a4,.7),hair=M(0x3a2a22,.8);
+Cy(.07,.075,.015,ink,fx,T+.008,fz);Cy(.045,.075,.17,robe,fx,T+.1,fz);Cy(.052,.052,.03,navy,fx,T+.125,fz);Cy(.05,.055,.025,M(0x2b2b2b,.9),fx,T+.2,fz);
+Sp(.04,skin,fx,T+.245,fz);for(var h=0;h<8;h++){var ah=h/8*6.283;Cn(.014,.045,hair,fx+Math.cos(ah)*.026,T+.278,fz+Math.sin(ah)*.026,0)}Sp(.036,hair,fx,T+.262,fz-.006,1,.7,1);
+Sp(.005,ink,fx-.015,T+.25,fz+.037);Sp(.005,ink,fx+.015,T+.25,fz+.037);
+var sl=B(.03,.09,.055,robe,fx-.07,T+.15,fz);sl.rotation.z=.35;var sr=B(.03,.09,.055,robe,fx+.07,T+.15,fz);sr.rotation.z=-.35;
+B(.02,.012,.035,M(0x2b2b2b),fx-.02,T+.026,fz+.012);B(.02,.012,.035,M(0x2b2b2b),fx+.02,T+.026,fz+.012);
+/* chair */
+Cy(.26,.26,.07,must,.3,.52,1.25);B(.4,.3,.05,must,.3,.82,1.5);Cy(.03,.03,.3,ink,.3,.34,1.25);for(var h2=0;h2<5;h2++)B(.24,.03,.04,ink,.3+Math.cos(h2*1.2566)*.12,.12,1.25+Math.sin(h2*1.2566)*.12).rotation.y=-h2*1.2566;
+/* switch + cable */
+RR(.42,.2,.07,.03,dol,.68,T+.045,-.38,true);var leds=[];for(var l=0;l<8;l++){var lm=M(0x2a1a10,.4,0xee8a47);B(.018,.01,.018,lm,.54+l*.037,T+.1,-.33);leds.push(lm)}
+Cy(.005,.005,.15,ink,.85,T+.17,-.44);Sp(.018,must,.85,T+.25,-.44);
+var cur=new THREE.CatmullRomCurve3([new THREE.Vector3(.58,T+.03,-.27),new THREE.Vector3(.5,T+.006,-.05),new THREE.Vector3(.3,T+.006,.12),new THREE.Vector3(.25,T+.07,.23)]);
+add(new THREE.Mesh(new THREE.TubeGeometry(cur,30,.006,6),aqua),0,0,0);
+sc.add(new THREE.HemisphereLight(0xffffff,0xd9d2b8,.95));var dl=new THREE.DirectionalLight(0xffffff,.75);dl.position.set(3,5,3);dl.castShadow=true;dl.shadow.mapSize.set(1024,1024);
+["left","bottom"].forEach(function(k){dl.shadow.camera[k]=-3});["right","top"].forEach(function(k){dl.shadow.camera[k]=3});sc.add(dl);
+
+var K={far:[[4,2.5,5],[0,.85,0]],mid:[[.2,1.4,2.1],[-.05,1.12,0]],mon:[[0,1.37,.82],[0,1.37,.09]]};
+cam.position.fromArray(K.far[0]);base.fromArray(K.far[0]);look.fromArray(K.far[1]);
+function size(){var w=innerWidth,h=innerHeight;R.setSize(w,h);cam.aspect=w/h;cam.fov=w/h<1?60:35;cam.updateProjectionMatrix()}addEventListener("resize",size);size();
+function go(k,dur,cb){var p0=cam.position.clone(),l0=look.clone(),p1=new THREE.Vector3().fromArray(K[k][0]),l1=new THREE.Vector3().fromArray(K[k][1]),t0=performance.now();base.copy(p1);moving=true;
+  (function f(n){var u=Math.min(1,(n-t0)/(dur*S)),e=u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2;cam.position.lerpVectors(p0,p1,e);look.lerpVectors(l0,l1,e);if(u<1)requestAnimationFrame(f);else{moving=false;if(cb)cb()}})(t0)}
+(function loop(n){requestAnimationFrame(loop);if(!moving&&stage==="far"&&!reduce)cam.position.x=base.x+Math.sin(n/2600)*.35;
+  leds.forEach(function(m,i){m.emissiveIntensity=(Math.sin(n/160+i*2.3)*Math.sin(n/410+i)>.1)?1:.08});cam.lookAt(look);R.render(sc,cam)})(0);
+
+/* flow */
+addEventListener("click",function(e){
+  if(stage!=="far"||e.target.closest("#lang"))return;stage="zoom";$("#hint").classList.remove("on");
+  go("mid",2400,function(){$("#t1").classList.add("on");$("#t2").classList.add("on");
+    var a="Ainul Malik",j=0;(function t(){$("#t1").textContent=a.slice(0,j++);if(j<=a.length)setTimeout(t,Z*70);else type($("#t2"),"t2",60)})();
+    setTimeout(function(){go("mon",2200,function(){$("#os").classList.add("on");stage="os";$("#t1").classList.remove("on");$("#t2").classList.remove("on")})},Z*2400)})});
+$("#close").onclick=function(e){e.stopPropagation();if(stage!=="os")return;stage="zoom";$("#os").classList.remove("on");go("far",2600,function(){stage="far";$("#hint").classList.add("on")})};
+function show(p){document.querySelectorAll(".pg").forEach(function(s){s.classList.toggle("on",s.id===p)});
+  document.querySelectorAll(".nv a[data-p]").forEach(function(a){a.classList.toggle("on",a.dataset.p===p)});$(".win").classList.toggle("home",p==="home");$(".main").scrollTop=0}
+document.querySelectorAll("[data-p]").forEach(function(a){a.onclick=function(){show(a.dataset.p)}});
+
+$("#st").onclick=function(){show("home")};function tick(){$("#clk").textContent=new Date().toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"})}tick();setInterval(tick,20000);
+/* ping the cat */
+var seq=0,M=["meow ","mrrp!","purrrr…","*headbutt*","nyaa~"];
+$("#pg").onclick=function(){var po=$("#po");if(seq===0)po.textContent="$ ping mimi\n";seq++;po.textContent+="64 bytes from mimi: icmp_seq="+seq+" ttl=64 time="+(Math.random()*.9+.1).toFixed(1)+" ms — "+M[seq%M.length]+"\n";po.scrollTop=1e5};
+
+</script>
+</body>
+</html>
