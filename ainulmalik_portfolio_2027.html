@@ -4,13 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ainul Malik — Portfolio 2027</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%238fa83c%27/%3E%3Cpath%20d%3D%27M14%2030%20L16%2010%20L28%2020%20Z%20M50%2030%20L48%2010%20L36%2020%20Z%27%20fill%3D%27%23f59a3c%27%20stroke%3D%27%232f3320%27%20stroke-width%3D%273%27%20stroke-linejoin%3D%27round%27/%3E%3Cellipse%20cx%3D%2732%27%20cy%3D%2736%27%20rx%3D%2720%27%20ry%3D%2717%27%20fill%3D%27%23f59a3c%27%20stroke%3D%27%232f3320%27%20stroke-width%3D%273%27/%3E%3Cellipse%20cx%3D%2732%27%20cy%3D%2742%27%20rx%3D%278%27%20ry%3D%276%27%20fill%3D%27%23fff%27/%3E%3Ccircle%20cx%3D%2724%27%20cy%3D%2734%27%20r%3D%272.8%27%20fill%3D%27%232f3320%27/%3E%3Ccircle%20cx%3D%2740%27%20cy%3D%2734%27%20r%3D%272.8%27%20fill%3D%27%232f3320%27/%3E%3Cpath%20d%3D%27M29%2039h6l-3%203z%27%20fill%3D%27%23e0578a%27/%3E%3C/svg%3E">
+<meta name="theme-color" content="#b9c493">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courier+Prime:wght@400;700&family=VT323&display=swap">
 <style>
-:root{--sky:#efe9d8;--pink:#e0578a;--yel:#e8c547;--mint:#a9bd55;--lil:#57c3dc;--ink:#2f3320;--card:#fffdf6;--olv:#8fa83c;--dol:#5d6e2a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--sky:#efe9d8;--pink:#e0578a;--yel:#e8c547;--mint:#a9bd55;--lil:#57c3dc;--ink:#2f3320;--card:#fffdf6;--olv:#8fa83c;--dol:#5d6e2a;--room:#b9c493;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--sky:#d8d1bb}}
 :root[data-theme="dark"]{--sky:#d8d1bb}
 *{box-sizing:inherit}
-html,body{height:100%;margin:0;overflow:hidden;background:var(--sky);color:var(--ink);font:400 17px/1.5 "Courier Prime","Courier New",monospace}
+html,body{height:100%;margin:0;overflow:hidden;background:var(--room);overscroll-behavior:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;color:var(--ink);font:400 17px/1.5 "Courier Prime","Courier New",monospace}
 html[data-l="fr"] .en,html[data-l="en"] .fr{display:none!important}
 .dots{background:radial-gradient(#ffffff55 2px,transparent 3px) 0 0/30px 30px,var(--sky)}
 #lang{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:12px;z-index:300;display:flex;border:3px solid var(--ink);border-radius:999px;overflow:hidden;box-shadow:3px 3px 0 var(--ink)}
@@ -121,6 +124,60 @@ p{margin:0 0 12px;max-width:62ch}
 .lk{margin-bottom:26px}.lk a{margin:0 12px;color:#3d5a14;font-weight:700;text-decoration:underline;cursor:pointer}.lk a:hover{color:#8a2f52}
 .win.home .side{display:none}.win.home .main{display:flex;flex-direction:column}.win.home .pg.on{margin:auto;text-align:center}
 @media(max-width:760px){.win{left:6px}.side{padding:12px 14px}}
+
+/* ===== v3 additions ===== */
+#hint{color:#f4efe2;text-shadow:0 1px 8px #1c2113,0 0 2px #1c2113}
+.tag{text-shadow:0 0 10px #dfe7c3,0 0 3px #dfe7c3}
+@media(pointer:coarse){.mouse{display:none!important}}@media(pointer:fine){.tap{display:none!important}}
+#snd{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:112px;z-index:300;border:3px solid var(--ink);border-radius:999px;background:#fff;color:var(--ink);font:600 14px "Courier Prime","Courier New",monospace;padding:5px 12px;box-shadow:3px 3px 0 var(--ink);cursor:pointer}
+.pron{font:italic 400 clamp(14px,2vw,18px) "Courier Prime","Courier New",monospace;color:#6b6a55;letter-spacing:.06em;margin:2px 0 4px}
+.pron::before{content:"/ "}.pron::after{content:" /"}.pron.sm{font-size:13px;margin:0 0 6px}
+.pj{cursor:pointer}.pj .op{display:block;margin-top:8px;font-weight:700;color:#3d5a14;text-decoration:underline}
+.pj:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+/* project window */
+.pw{position:absolute;left:12%;top:9%;width:min(660px,76%);max-height:80%;display:flex;flex-direction:column;z-index:4;background:#e6e0cd;border:2px solid;border-color:#fff #6b6a55 #6b6a55 #fff;box-shadow:0 0 0 1px var(--ink),8px 8px 0 #0004;padding:2px}
+.pw[hidden],#ptk[hidden]{display:none!important}
+.pw.pop2{animation:pop .4s cubic-bezier(.3,1.4,.5,1)}.pw .tb{cursor:move;user-select:none}
+.pwb{overflow:auto;background:var(--card);border:2px solid;border-color:#6b6a55 #fff #fff #6b6a55;padding:18px 24px 24px;margin-top:2px}
+.pwb h2{font-size:clamp(26px,4vw,40px)}.pwb .meta{font-size:14px;color:#4f6b1a}
+.pwb ul{margin:0 0 10px;padding-left:20px;max-width:62ch}.pwb li{margin:3px 0}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:8px}
+.ph{margin:0;position:relative;aspect-ratio:4/3;border:1px dashed #6b6a55;background:repeating-linear-gradient(45deg,#f1ecdd 0 8px,#e9e3cf 8px 16px);display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;color:#6b6a55;overflow:hidden}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* quicktime-style youtube preview */
+.mac{position:relative;max-width:640px;margin:16px 0;border:2px solid var(--ink);overflow:hidden;display:flex;justify-content:center;padding:36px 0 54px;background:radial-gradient(ellipse at 18% 62%,#8aa7e6 0,#5f82d3 45%,#4767b6 100%)}
+.mbar{position:absolute;left:0;right:0;top:0;height:20px;background:linear-gradient(#f4f4f4,#d4d4d4);border-bottom:1px solid #8a8a8a;display:flex;align-items:center;gap:12px;padding:0 10px;font:11px "Courier Prime",monospace;color:#111;white-space:nowrap;overflow:hidden}
+.mbar .ap{width:9px;height:9px;border-radius:50%;background:#555}.mbar b{font-weight:700}.mbar time{margin-left:auto}
+.mic{position:absolute;right:10px;width:64px;text-align:center;font:700 10px "Courier Prime",monospace;color:#fff;text-shadow:0 1px 2px #000}
+.mic i{display:block;width:34px;height:26px;margin:0 auto 3px;border-radius:5px;background:linear-gradient(#e8e8e8,#a8a8a8);border:1px solid #666}.mic i.fd{background:linear-gradient(#c8dcff,#7fa3e6)}
+.qt{position:relative;width:68%;background:linear-gradient(#e7e7e7,#c9c9c9);border:1px solid #777;border-radius:8px 8px 6px 6px;box-shadow:0 10px 26px #0006;overflow:hidden}
+.qtt{height:22px;background:linear-gradient(#efefef,#cfcfcf);display:flex;align-items:center;justify-content:center;position:relative;font:600 11px "Courier Prime",monospace;color:#333}
+.qtt i{position:absolute;top:5px;width:12px;height:12px;border-radius:50%;border:1px solid #0004}
+.qtt .r{left:8px;background:radial-gradient(circle at 35% 30%,#ffb3a8,#e5483a)}.qtt .y{left:26px;background:radial-gradient(circle at 35% 30%,#ffe08a,#e8a817)}.qtt .g{left:44px;background:radial-gradient(circle at 35% 30%,#b6f0a4,#3fb53a)}
+.qtv{background:#000;aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center;color:#8a8a8a;font-size:12px;text-align:center;padding:0 10px}
+.qtv iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.qtv.on>span{display:none!important}
+.qts{display:flex;align-items:center;gap:6px;padding:4px 8px;background:linear-gradient(#e5e5e5,#d2d2d2);border-top:1px solid #888;font:10px "Courier Prime",monospace}
+.trk{flex:1;height:8px;border:1px solid #777;background:#f3f3f3;position:relative}.trk i{position:absolute;left:0;top:-5px;border:4px solid transparent;border-top:6px solid #222}
+.qtc{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 10px 8px;background:linear-gradient(#d6d6d6,#bdbdbd)}
+.vol{display:flex;align-items:center;gap:5px}.vol u{width:8px;height:8px;background:#555;display:block}.vsl{width:44px;height:3px;background:#777;position:relative}.vsl i{position:absolute;left:0;top:-4px;width:10px;height:10px;border-radius:50%;background:radial-gradient(#fff,#bbb);border:1px solid #666}
+.tr{display:flex;gap:6px;align-items:center}.tr button{width:22px;height:22px;border-radius:50%;border:1px solid #777;background:linear-gradient(#fafafa,#cfcfcf);font:700 8px monospace;cursor:pointer;padding:0;color:#333}.tr button.pl{width:34px;height:34px;font-size:12px}
+.tvb{width:22px;height:22px;border-radius:50%;border:1px solid #666;background:linear-gradient(#f6f6f6,#c4c4c4);font:700 8px/20px monospace;text-align:center;color:#333;text-decoration:none}
+.dock{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);display:flex;gap:6px;padding:4px 8px;background:#ffffff55;border:1px solid #fff9;border-radius:8px}
+.dock i{width:22px;height:22px;border-radius:6px;background:linear-gradient(#fff,#9bb5e8);border:1px solid #4e6aa8}
+.dock i:nth-child(2){background:linear-gradient(#ffe08a,#e8a817)}.dock i:nth-child(3){background:linear-gradient(#c9f0a4,#5ab540)}.dock i:nth-child(4){background:linear-gradient(#ffc0cf,#e0578a)}.dock i:nth-child(5){background:linear-gradient(#e6e6e6,#999)}
+/* smartphones */
+@media(max-width:760px){
+ #snd{right:104px;padding:5px 9px}
+ .os{align-items:flex-end}
+ .scr{width:100vw;height:calc(100% - 52px - env(safe-area-inset-top,0px));border-width:8px;border-radius:18px}
+ .win{left:4px;right:4px;top:6px;bottom:38px}
+ .tb button{width:26px;height:22px}.nv a{padding:4px 0}
+ .pw{left:4px;right:4px;top:4px;width:auto;max-height:calc(100% - 44px)}.pwb{padding:14px 16px 20px}
+ .main{padding:16px}.home h2{font-size:clamp(38px,13vw,64px)}
+ .lk a{display:inline-block;margin:6px 10px}.sb span:nth-child(n+2){display:none}
+ .mac{padding-bottom:50px}.qt{width:94%}.mic{display:none}.qtc{padding:6px 8px 8px}.vol .vsl{width:28px}
+}
+@media(max-width:760px) and (orientation:landscape){.body{flex-direction:row}.side{width:150px;border-bottom:0;padding:10px 12px}.side h1{font-size:20px}.nv{display:block;margin-top:8px}.nv a{margin:7px 0}.scr{height:calc(100% - 48px - env(safe-area-inset-top,0px))}}
 </style>
 </head>
 <body>
@@ -135,10 +192,11 @@ p{margin:0 0 12px;max-width:62ch}
 <path d="M22 56 h-15 M22 62 l-14 4 M78 56 h15 M78 62 l14 4" stroke="#2a1a3a" stroke-width="2.5" stroke-linecap="round"/></symbol></svg>
 
 <div id="lang"><button data-l="fr">FR</button><button data-l="en" class="on">EN</button></div>
+<button id="snd" aria-label="Sound on/off">♪ ON</button>
 
 <canvas id="gl"></canvas>
 <div class="tag" id="t1"></div><div class="tag" id="t2"></div>
-<div id="hint"><span class="en">Click anywhere to begin</span><span class="fr">Clique n’importe où pour commencer</span></div>
+<div id="hint"><span class="en mouse">Click anywhere to begin</span><span class="en tap">Tap anywhere to begin</span><span class="fr mouse">Clique n’importe où pour commencer</span><span class="fr tap">Touche l’écran pour commencer</span></div>
 
 <div id="boot" class="layer"><div class="bx"><p id="bt"></p><button id="start"><span class="en">START</span><span class="fr">DÉMARRER</span></button></div></div>
 <pre id="bios" class="layer off"></pre>
@@ -146,10 +204,10 @@ p{margin:0 0 12px;max-width:62ch}
 <div id="os" class="os"><div class="scr dots"><div id="fl2"></div>
   <div class="icons"><div class="ic"><i>A</i>My Showcase</div><div class="ic"><i>&gt;_</i>Terminal</div><div class="ic"><i>CV</i>Resume</div><div class="ic"><i>R&amp;T</i>IUT Nice</div></div>
   <div class="win home"><div class="tb"><span>Ainul Malik - Showcase 2026</span><span><button>_</button><button>□</button><button id="close">X</button></span></div>
-    <div class="body"><div class="side"><h1>Ainul<br>Malik</h1><small>Showcase ’26</small>
-      <nav class="nv"><a data-p="home" class="on"><span class="en">HOME</span><span class="fr">ACCUEIL</span></a><a data-p="about"><span class="en">ABOUT</span><span class="fr">À PROPOS</span></a><a data-p="exp"><span class="en">EXPERIENCE</span><span class="fr">PARCOURS</span></a><a data-p="proj"><span class="en">PROJECTS</span><span class="fr">PROJETS</span></a><a data-p="contact">CONTACT</a></nav></div>
-      <div class="main"><section class="pg on" id="home"><div class="home"><h2>Ainul Malik</h2><div class="sub"><span class="en">Networks &amp; Telecom Student</span><span class="fr">Étudiant·e en Réseaux &amp; Télécoms</span></div>
-      <div class="lk"><a data-p="about"><span class="en">ABOUT</span><span class="fr">À PROPOS</span></a><a data-p="exp"><span class="en">EXPERIENCE</span><span class="fr">PARCOURS</span></a><a data-p="proj"><span class="en">PROJECTS</span><span class="fr">PROJETS</span></a><a data-p="contact">CONTACT</a></div>
+    <div class="body"><div class="side"><h1>Ainul<br>Malik</h1><div class="pron sm"><span class="en">eye-nool</span><span class="fr">aï-noul</span></div><small>Showcase ’26</small>
+      <nav class="nv"><a data-p="home" class="on"><span class="en">HOME</span><span class="fr">ACCUEIL</span></a><a data-p="about"><span class="en">ABOUT</span><span class="fr">À PROPOS</span></a><a data-p="exp"><span class="en">EXPERIENCE</span><span class="fr">PARCOURS</span></a><a data-p="proj"><span class="en">PROJECTS</span><span class="fr">PROJETS</span></a><a data-p="yt">YOUTUBE</a><a data-p="contact">CONTACT</a></nav></div>
+      <div class="main"><section class="pg on" id="home"><div class="home"><h2>Ainul Malik</h2><div class="pron"><span class="en">eye-nool</span><span class="fr">aï-noul</span></div><div class="sub"><span class="en">Networks &amp; Telecom Student</span><span class="fr">Étudiant·e en Réseaux &amp; Télécoms</span></div>
+      <div class="lk"><a data-p="about"><span class="en">ABOUT</span><span class="fr">À PROPOS</span></a><a data-p="exp"><span class="en">EXPERIENCE</span><span class="fr">PARCOURS</span></a><a data-p="proj"><span class="en">PROJECTS</span><span class="fr">PROJETS</span></a><a data-p="yt">YOUTUBE</a><a data-p="contact">CONTACT</a></div>
       <div class="ping"><button id="pg">ping mimi</button><pre id="po">$ _</pre></div></div></section>
     <section class="pg" id="about"><h2><span class="en">Hello, I’m Ainul!</span><span class="fr">Salut, moi c’est Ainul !</span></h2>
       <p class="en">I’m a second-year BUT Réseaux &amp; Télécommunications student at IUT Nice Côte d’Azur, looking for an internship or work-study (alternance) in networks, systems or cybersecurity.</p>
@@ -164,26 +222,47 @@ p{margin:0 0 12px;max-width:62ch}
       <h3><span class="en">Toolbox</span><span class="fr">Ma boîte à outils</span></h3>
       <div class="chips"><span class="chip">Cisco IOS</span><span class="chip">VLAN · STP</span><span class="chip">OSPF · BGP</span><span class="chip">Linux</span><span class="chip">Windows Server</span><span class="chip">Docker</span><span class="chip">Wireshark</span><span class="chip">GNS3</span><span class="chip">Zabbix</span><span class="chip">Python</span><span class="chip">Bash</span><span class="chip">Git</span></div></section>
     <section class="pg" id="proj"><h2><span class="en">Projects</span><span class="fr">Projets</span></h2><div class="grid">
-      <div class="pj"><b> <span class="en">Enterprise network</span><span class="fr">Réseau d’entreprise</span></b><p class="en">Multi-site topology with VLANs, inter-VLAN routing, OSPF and ACLs.</p><p class="fr">Topologie multi-sites : VLAN, routage inter-VLAN, OSPF et ACL.</p><small>Cisco · Packet Tracer</small></div>
-      <div class="pj"><b> <span class="en">Monitoring</span><span class="fr">Supervision</span></b><p class="en">Zabbix watching switches and servers over SNMP, with alerts.</p><p class="fr">Zabbix surveille switchs et serveurs via SNMP, avec alertes.</p><small>Zabbix · Linux · SNMP</small></div>
-      <div class="pj"><b> <span class="en">Secure access</span><span class="fr">Accès sécurisé</span></b><p class="en">WireGuard VPN on a home-lab server.</p><p class="fr">VPN WireGuard sur un serveur de home-lab.</p><small>WireGuard · Debian</small></div>
-      <div class="pj"><b> <span class="en">VoIP telephony</span><span class="fr">Téléphonie VoIP</span></b><p class="en">Asterisk PBX with SIP extensions and voicemail.</p><p class="fr">PBX Asterisk avec postes SIP et messagerie vocale.</p><small>Asterisk · SIP</small></div></div></section>
+      <div class="pj" role="button" tabindex="0" data-pj="0"><b> <span class="en">Enterprise network</span><span class="fr">Réseau d’entreprise</span></b><p class="en">Multi-site topology with VLANs, inter-VLAN routing, OSPF and ACLs.</p><p class="fr">Topologie multi-sites : VLAN, routage inter-VLAN, OSPF et ACL.</p><small>Cisco · Packet Tracer</small><span class="op"><span class="en">Open ▸</span><span class="fr">Ouvrir ▸</span></span></div>
+      <div class="pj" role="button" tabindex="0" data-pj="1"><b> <span class="en">Monitoring</span><span class="fr">Supervision</span></b><p class="en">Zabbix watching switches and servers over SNMP, with alerts.</p><p class="fr">Zabbix surveille switchs et serveurs via SNMP, avec alertes.</p><small>Zabbix · Linux · SNMP</small><span class="op"><span class="en">Open ▸</span><span class="fr">Ouvrir ▸</span></span></div>
+      <div class="pj" role="button" tabindex="0" data-pj="2"><b> <span class="en">Secure access</span><span class="fr">Accès sécurisé</span></b><p class="en">WireGuard VPN on a home-lab server.</p><p class="fr">VPN WireGuard sur un serveur de home-lab.</p><small>WireGuard · Debian</small><span class="op"><span class="en">Open ▸</span><span class="fr">Ouvrir ▸</span></span></div>
+      <div class="pj" role="button" tabindex="0" data-pj="3"><b> <span class="en">VoIP telephony</span><span class="fr">Téléphonie VoIP</span></b><p class="en">Asterisk PBX with SIP extensions and voicemail.</p><p class="fr">PBX Asterisk avec postes SIP et messagerie vocale.</p><small>Asterisk · SIP</small><span class="op"><span class="en">Open ▸</span><span class="fr">Ouvrir ▸</span></span></div></div></section>
+    <section class="pg" id="yt"><h2>YouTube</h2>
+      <p class="en">A little preview of my channel. Press play!</p><p class="fr">Un petit aperçu de ma chaîne. Appuie sur lecture !</p>
+      <div class="mac"><div class="mbar"><i class="ap"></i><b>QuickTime Player</b><span>File</span><span>Edit</span><span>Movie</span><span>Window</span><span>Help</span><time id="mclk"></time></div>
+        <div class="mic" style="top:32px"><i></i>Channel</div><div class="mic" style="top:90px"><i class="fd"></i>Videos</div>
+        <div class="qt"><div class="qtt"><i class="r"></i><i class="y"></i><i class="g"></i><span id="qtn"></span></div>
+          <div class="qtv" id="qtv"><span class="en">Preview coming soon</span><span class="fr">Aperçu bientôt disponible</span></div>
+          <div class="qts"><span>00:00:00</span><div class="trk"><i></i></div></div>
+          <div class="qtc"><div class="vol"><u></u><div class="vsl"><i></i></div></div>
+            <div class="tr"><button>|◄</button><button>◄◄</button><button class="pl" id="qpl">►</button><button>►►</button><button>►|</button></div>
+            <a class="tvb" id="tvb" target="_blank" rel="noopener">TV</a></div></div>
+        <div class="dock"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <p><a id="ytl" target="_blank" rel="noopener"><span class="en">Open my channel</span><span class="fr">Ouvrir ma chaîne</span> ↗</a></p></section>
     <section class="pg ct" id="contact"><h2><span class="en">Say hi!</span><span class="fr">Dis bonjour !</span></h2>
       <p class="en">Open to internships, alternance, or just a chat about networks and plants.</p><p class="fr">Ouvert·e aux stages, alternances, ou juste pour parler réseaux et plantes.</p>
       <p> <a href="mailto:ainulsmz06@gmail.com">ainulsmz06@gmail.com</a><br> <a href="https://www.linkedin.com/in/ainul-binti-abd-malik">LinkedIn</a><br> <a href="https://github.com/ainulmlk/ainulmalik">GitHub</a><br> Nice, France</p>
       <p><a href="assets/CV_Ainul Nafisah.pdf"> <span class="en">Download my resume</span><span class="fr">Télécharger mon CV</span></a></p></section></div></div><div class="sb"><span>© Copyright 2026 Ainul Malik</span><span></span><span></span></div></div>
-  <div class="tk"><b id="st">Start</b><em>My Showcase</em><time id="clk"></time></div>
+  <div class="pw" id="pw" hidden><div class="tb" id="pwt"><span id="pwn"></span><span><button id="pwx">X</button></span></div><div class="pwb" id="pwb"></div></div>
+  <div class="tk"><b id="st">Start</b><em>My Showcase</em><em id="ptk" hidden></em><time id="clk"></time></div>
 </div></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 var $=function(s){return document.querySelector(s)},reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,Z=reduce?0:1,stage="boot",bd=false;
 var L=((navigator.language||"en").slice(0,2)==="fr")?"fr":"en";
-var D={en:{boot:"Ainul Malik Portfolio Showcase 2026\nClick start to begin _",t2:"Networks & Telecom"},fr:{boot:"Portfolio d’Ainul Malik — Showcase 2026\nClique sur démarrer _",t2:"Réseaux & Télécoms"}};
+var D={en:{boot:"Ainul Malik Portfolio Showcase 2026\nPress start to begin _",t2:"Networks & Telecom"},fr:{boot:"Portfolio d’Ainul Malik — Showcase 2026\nAppuie sur démarrer _",t2:"Réseaux & Télécoms"}};
+var AC=null,mute=false,unl=false;
+try{mute=localStorage.getItem("snd")==="0"}catch(x){}
+function ac(){if(!AC){var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;AC=new C()}if(AC.state==="suspended")AC.resume();return AC}
+addEventListener("pointerdown",function(){unl=true;ac()},{capture:true,once:true});addEventListener("keydown",function(){unl=true;ac()},{capture:true,once:true});
+function tone(f,d,ty,v,sl,dl){if(mute||!unl)return;var a=ac();if(!a)return;var t=a.currentTime+(dl||0),o=a.createOscillator(),g=a.createGain();o.type=ty||"square";o.frequency.setValueAtTime(f,t);if(sl)o.frequency.exponentialRampToValueAtTime(sl,t+d);g.gain.setValueAtTime(v||.04,t);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(a.destination);o.start(t);o.stop(t+d+.03)}
+function noise(d,f0,f1,v){if(mute||!unl)return;var a=ac();if(!a)return;var n=Math.floor(a.sampleRate*d),b=a.createBuffer(1,n,a.sampleRate),x=b.getChannelData(0),i;for(i=0;i<n;i++)x[i]=Math.random()*2-1;var s=a.createBufferSource(),f=a.createBiquadFilter(),g=a.createGain(),t=a.currentTime;s.buffer=b;f.type="bandpass";f.Q.value=1.2;f.frequency.setValueAtTime(f0,t);f.frequency.exponentialRampToValueAtTime(f1,t+d);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(v||.1,t+d*.4);g.gain.exponentialRampToValueAtTime(.0001,t+d);s.connect(f);f.connect(g);g.connect(a.destination);s.start(t)}
+var SFX={click:function(){tone(900,.05,"square",.035)},tick:function(){tone(1300+Math.random()*400,.02,"square",.018)},beep:function(){tone(880,.12,"square",.04);tone(1320,.16,"square",.04,0,.12)},boot:function(){tone(440,.1,"square",.04);tone(660,.1,"square",.04,0,.1);tone(880,.18,"square",.04,0,.2)},whoosh:function(){noise(1.8,250,2600,.14)},chime:function(){[523,659,784,1047].forEach(function(f,i){tone(f,.45,"sine",.05,0,i*.09)})},pop:function(){tone(420,.1,"triangle",.07,820)},close:function(){tone(700,.12,"triangle",.06,300)},
+ meow:function(){if(mute||!unl)return;var a=ac();if(!a)return;var t=a.currentTime,o=a.createOscillator(),f=a.createBiquadFilter(),g=a.createGain();o.type="sawtooth";f.type="bandpass";f.frequency.value=1400;f.Q.value=2;o.frequency.setValueAtTime(520,t);o.frequency.linearRampToValueAtTime(980,t+.16);o.frequency.linearRampToValueAtTime(560,t+.5);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.12,t+.06);g.gain.exponentialRampToValueAtTime(.0001,t+.52);o.connect(f);f.connect(g);g.connect(a.destination);o.start(t);o.stop(t+.55)}};
 function setLang(l){L=l;document.documentElement.dataset.l=l;document.documentElement.lang=l;
-  document.querySelectorAll("#lang button").forEach(function(b){b.classList.toggle("on",b.dataset.l===l)});if(bd)$("#bt").textContent=D[l].boot}
-document.querySelectorAll("#lang button").forEach(function(b){b.onclick=function(e){e.stopPropagation();setLang(b.dataset.l)}});setLang(L);
-function type(el,key,sp,cb){var i=0;(function t(){var s=D[L][key];el.textContent=s.slice(0,i++);if(i<=s.length)setTimeout(t,Z*sp);else if(cb)cb()})()}
+  document.querySelectorAll("#lang button").forEach(function(b){b.classList.toggle("on",b.dataset.l===l)});if(bd)$("#bt").textContent=D[l].boot;tick();if(curP>=0&&!$("#pw").hidden)renderProj(curP)}
+document.querySelectorAll("#lang button").forEach(function(b){b.onclick=function(e){e.stopPropagation();SFX.click();setLang(b.dataset.l)}});setLang(L);
+function type(el,key,sp,cb){var i=0;(function t(){var s=D[L][key];SFX.tick();el.textContent=s.slice(0,i++);if(i<=s.length)setTimeout(t,Z*sp);else if(cb)cb()})()}
 function scatter(box,n){var E=["","","","","","","","","",""];for(var i=0;i<n;i++){var s=document.createElement("span");s.className="fl";s.textContent=E[i%E.length];
   s.style.cssText="left:"+Math.random()*96+"%;top:"+Math.random()*92+"%;font-size:"+(16+Math.random()*26)+"px;animation-delay:-"+Math.random()*6+"s;opacity:.85";box.appendChild(s)}}
 
@@ -193,20 +272,20 @@ document.querySelectorAll(".bp").forEach(function(p){p.setAttribute("points",pts
 /* boot + bios */
 type($("#bt"),"boot",45,function(){bd=true;$("#start").style.opacity=1});
 $("#start").onclick=function(){
-  if(stage!=="boot")return;stage="bios";$("#boot").classList.add("off");$("#bios").classList.remove("off");
+  if(stage!=="boot")return;SFX.boot();stage="bios";$("#boot").classList.add("off");$("#bios").classList.remove("off");
   var d=new Date().toLocaleDateString("en-GB"),el=$("#bios"),i=0,out="",
   Ls=["Ainul Malik Inc.      Released: 01/09/2024","PocketGarden BIOS (C)2026 Malik Ainul Inc.","","R&T S13 2024-2026 Special IUT06N","","Garden Console(tm) XX 113","Checking RAM : 16384 OK","Checking cats : 3 FOUND ","","LOADING RESOURCES (8/8).."],
   It=["eth0 link","watering_can","vlan10.trunk","ospf.area0","seed_packet","wireguard.wg0","cat.purr","startup"];
   It.forEach(function(n,k){Ls.push("   Loaded "+(n+"                ").slice(0,20)+"... "+Math.round((k+1)/It.length*100)+"%")});
   var ft='<span class="ft">Press  to water the plants , ESC to skip nap\n'+d+"</span>";
-  (function nx(){if(i<Ls.length){out+=Ls[i++]+"\n";el.innerHTML=out.replace(/&/g,"&amp;")+ft;setTimeout(nx,Z*(i<11?110:230))}else setTimeout(enter,Z*700)})();
+  (function nx(){if(i<Ls.length){out+=Ls[i++]+"\n";SFX.tick();el.innerHTML=out.replace(/&/g,"&amp;")+ft;setTimeout(nx,Z*(i<11?110:230))}else{SFX.beep();setTimeout(enter,Z*700)}})();
 };
 function enter(){$("#gl").classList.add("on");$("#bios").classList.add("off");stage="far";setTimeout(function(){$("#hint").classList.add("on")},Z*900)}
 
 /* ---------- 3D desk (calm palette) ---------- */
 var S=reduce?.01:1,R=new THREE.WebGLRenderer({canvas:$("#gl"),antialias:true}),sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(35,1,.1,60),look=new THREE.Vector3(),moving=false,base=new THREE.Vector3();
-var bg=new THREE.Color(getComputedStyle(document.documentElement).getPropertyValue("--sky").trim()||"#efe9d8");
-R.setPixelRatio(Math.min(devicePixelRatio||1,2));R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;sc.background=bg;sc.fog=new THREE.Fog(bg,9,26);
+var roomHex=getComputedStyle(document.documentElement).getPropertyValue("--room").trim()||"#b9c493",bg=new THREE.Color(roomHex);
+R.setPixelRatio(Math.min(devicePixelRatio||1,innerWidth<760?1.5:2));R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;sc.background=bg;sc.fog=new THREE.Fog(bg,16,34);
 function M(c,r,e){return new THREE.MeshStandardMaterial({color:c,roughness:r==null?.7:r,emissive:e||0})}
 function add(o,x,y,z){o.position.set(x,y,z);o.castShadow=o.receiveShadow=true;sc.add(o);return o}
 function B(w,h,d,m,x,y,z,ry){var o=add(new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m),x,y,z);if(ry)o.rotation.y=ry;return o}
@@ -215,7 +294,11 @@ function RR(w,h,d,r,m,x,y,z,flat){var p=new THREE.Shape(),a=-w/2,b=-h/2,c=w/2,e=
 function Sp(r,m,x,y,z,sx,sy,sz){var o=add(new THREE.Mesh(new THREE.SphereGeometry(r,20,14),m),x,y,z);o.scale.set(sx||1,sy||1,sz||1);return o}
 function Cn(r,h,m,x,y,z,rz){var o=add(new THREE.Mesh(new THREE.ConeGeometry(r,h,4),m),x,y,z);o.rotation.set(0,Math.PI/4,rz||0);return o}
 function Cy(rt,rb,h,m,x,y,z){return add(new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,20),m),x,y,z)}
-var fl=new THREE.Mesh(new THREE.CircleGeometry(40,48),M(0xe6dfca,1));fl.rotation.x=-Math.PI/2;fl.receiveShadow=true;sc.add(fl);
+/* ombre floor: dark green near the desk fading to the light room colour */
+var fc=document.createElement("canvas");fc.width=fc.height=512;var fg=fc.getContext("2d"),gd=fg.createRadialGradient(256,256,0,256,256,256);
+gd.addColorStop(0,"#223a1b");gd.addColorStop(.3,"#34522a");gd.addColorStop(.62,"#6f8a4a");gd.addColorStop(1,roomHex);fg.fillStyle=gd;fg.fillRect(0,0,512,512);
+var fl=new THREE.Mesh(new THREE.CircleGeometry(20,64),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(fc)}));fl.rotation.x=-Math.PI/2;sc.add(fl);
+var shp=new THREE.Mesh(new THREE.PlaneGeometry(40,40),new THREE.ShadowMaterial({opacity:.3}));shp.rotation.x=-Math.PI/2;shp.position.y=.002;shp.receiveShadow=true;sc.add(shp);
 /* shaggy olive rug */
 var rc=document.createElement("canvas");rc.width=rc.height=128;var rg=rc.getContext("2d"),rcol=["#7f9633","#8fa83c","#9fb84a","#b4c862","#6f8530"];rg.fillStyle="#8fa83c";rg.fillRect(0,0,128,128);
 for(var q=0;q<2600;q++){rg.fillStyle=rcol[q%5];rg.fillRect(Math.random()*128,Math.random()*128,2,2)}
@@ -232,7 +315,7 @@ Cy(.14,.18,.03,cr,0,1.02,-.15);RR(.74,.62,.5,.1,cr,0,1.34,-.2);RR(.6,.47,.02,.05
 var cv=document.createElement("canvas");cv.width=512;cv.height=400;var g=cv.getContext("2d"),dc=["#e0578a","#e8c547","#ee8a47","#57c3dc","#a9bd55"];
 g.fillStyle="#8fa83c";g.fillRect(0,0,512,400);for(var u=0;u<40;u++){g.fillStyle="#ffffff30";g.beginPath();g.arc((u%8)*70+20,Math.floor(u/8)*86+20,7,0,6.283);g.fill()}
 g.fillStyle="#fffdf6";g.fillRect(44,30,424,320);g.fillStyle="#5d6e2a";g.fillRect(44,30,424,26);g.fillStyle="#2f3320";g.textAlign="center";g.font="bold 54px Georgia,serif";g.fillText("Ainul Malik",256,170);g.font="bold 22px Georgia,serif";g.fillText("Networks & Telecom",256,208);
-g.font="bold 15px Georgia,serif";g.fillStyle="#4f6b1a";g.fillText("ABOUT   EXPERIENCE   PROJECTS   CONTACT",256,262);dc.forEach(function(c,i){g.fillStyle=c;g.beginPath();g.arc(176+i*40,314,10,0,6.283);g.fill()});
+g.font="bold 13px Georgia,serif";g.fillStyle="#4f6b1a";g.fillText("ABOUT  EXPERIENCE  PROJECTS  YOUTUBE  CONTACT",256,262);dc.forEach(function(c,i){g.fillStyle=c;g.beginPath();g.arc(176+i*40,314,10,0,6.283);g.fill()});
 add(new THREE.Mesh(new THREE.PlaneGeometry(.5,.38),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(cv)})),0,1.37,.1);
 RR(.64,.22,.03,.04,cr,0,T+.02,.45,true);var kk=new THREE.InstancedMesh(new THREE.BoxGeometry(.036,.012,.032),M(0xffffff,.5),70),mx=new THREE.Matrix4(),pc=[0xffffff,0xffffff,0xe8c547,0xffffff,0xe0578a,0xffffff,0x57c3dc,0xffffff,0xee8a47,0xffffff,0xa9bd55];
 for(var r=0;r<5;r++)for(var c=0;c<14;c++){var q2=r*14+c;mx.setPosition(-.27+c*.042,T+.058,.38+r*.036);kk.setMatrixAt(q2,mx);kk.setColorAt(q2,new THREE.Color(pc[(q2*7)%pc.length]))}sc.add(kk);
@@ -261,29 +344,76 @@ add(new THREE.Mesh(new THREE.TubeGeometry(cur,30,.006,6),aqua),0,0,0);
 sc.add(new THREE.HemisphereLight(0xffffff,0xd9d2b8,.95));var dl=new THREE.DirectionalLight(0xffffff,.75);dl.position.set(3,5,3);dl.castShadow=true;dl.shadow.mapSize.set(1024,1024);
 ["left","bottom"].forEach(function(k){dl.shadow.camera[k]=-3});["right","top"].forEach(function(k){dl.shadow.camera[k]=3});sc.add(dl);
 
-var K={far:[[4,2.5,5],[0,.85,0]],mid:[[.2,1.4,2.1],[-.05,1.12,0]],mon:[[0,1.37,.82],[0,1.37,.09]]};
-cam.position.fromArray(K.far[0]);base.fromArray(K.far[0]);look.fromArray(K.far[1]);
-function size(){var w=innerWidth,h=innerHeight;R.setSize(w,h);cam.aspect=w/h;cam.fov=w/h<1?60:35;cam.updateProjectionMatrix()}addEventListener("resize",size);size();
-function go(k,dur,cb){var p0=cam.position.clone(),l0=look.clone(),p1=new THREE.Vector3().fromArray(K[k][0]),l1=new THREE.Vector3().fromArray(K[k][1]),t0=performance.now();base.copy(p1);moving=true;
+var K={far:[[4,2.5,5],[0,.85,0]],mid:[[.2,1.4,2.1],[-.05,1.12,0]],mon:[[0,1.37,.82],[0,1.37,.09]]},curK="far",MU={far:1.5,mid:1.9,mon:1.9};
+function kf(k){var a=K[k];if(innerWidth/innerHeight>=1)return a;var m=MU[k],l=a[1],q=a[0];return[[l[0]+(q[0]-l[0])*m,l[1]+(q[1]-l[1])*m,l[2]+(q[2]-l[2])*m],l]}
+cam.position.fromArray(kf("far")[0]);base.copy(cam.position);look.fromArray(kf("far")[1]);
+function size(){var w=innerWidth,h=innerHeight;R.setSize(w,h);cam.aspect=w/h;cam.fov=w/h<1?50:35;cam.updateProjectionMatrix();if(!moving){var k=kf(curK);cam.position.fromArray(k[0]);base.copy(cam.position);look.fromArray(k[1])}}addEventListener("resize",size);size();
+function go(k,dur,cb){var p0=cam.position.clone(),l0=look.clone(),p1=new THREE.Vector3().fromArray(kf(k)[0]),l1=new THREE.Vector3().fromArray(kf(k)[1]),t0=performance.now();base.copy(p1);moving=true;curK=k;
   (function f(n){var u=Math.min(1,(n-t0)/(dur*S)),e=u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2;cam.position.lerpVectors(p0,p1,e);look.lerpVectors(l0,l1,e);if(u<1)requestAnimationFrame(f);else{moving=false;if(cb)cb()}})(t0)}
 (function loop(n){requestAnimationFrame(loop);if(!moving&&stage==="far"&&!reduce)cam.position.x=base.x+Math.sin(n/2600)*.35;
   leds.forEach(function(m,i){m.emissiveIntensity=(Math.sin(n/160+i*2.3)*Math.sin(n/410+i)>.1)?1:.08});cam.lookAt(look);R.render(sc,cam)})(0);
 
 /* flow */
 addEventListener("click",function(e){
-  if(stage!=="far"||e.target.closest("#lang"))return;stage="zoom";$("#hint").classList.remove("on");
-  go("mid",2400,function(){$("#t1").classList.add("on");$("#t2").classList.add("on");
-    var a="Ainul Malik",j=0;(function t(){$("#t1").textContent=a.slice(0,j++);if(j<=a.length)setTimeout(t,Z*70);else type($("#t2"),"t2",60)})();
-    setTimeout(function(){go("mon",2200,function(){$("#os").classList.add("on");stage="os";$("#t1").classList.remove("on");$("#t2").classList.remove("on")})},Z*2400)})});
-$("#close").onclick=function(e){e.stopPropagation();if(stage!=="os")return;stage="zoom";$("#os").classList.remove("on");go("far",2600,function(){stage="far";$("#hint").classList.add("on")})};
+  if(stage!=="far"||e.target.closest("#lang,#snd"))return;stage="zoom";$("#hint").classList.remove("on");
+  SFX.whoosh();go("mid",2400,function(){$("#t1").classList.add("on");$("#t2").classList.add("on");
+    var a="Ainul Malik",j=0;(function t(){SFX.tick();$("#t1").textContent=a.slice(0,j++);if(j<=a.length)setTimeout(t,Z*70);else type($("#t2"),"t2",60)})();
+    setTimeout(function(){SFX.whoosh();go("mon",2200,function(){SFX.chime();$("#os").classList.add("on");stage="os";$("#t1").classList.remove("on");$("#t2").classList.remove("on")})},Z*2400)})});
+$("#close").onclick=function(e){e.stopPropagation();if(stage!=="os")return;closeProj(true);SFX.close();SFX.whoosh();stage="zoom";$("#os").classList.remove("on");go("far",2600,function(){stage="far";$("#hint").classList.add("on")})};
 function show(p){document.querySelectorAll(".pg").forEach(function(s){s.classList.toggle("on",s.id===p)});
-  document.querySelectorAll(".nv a[data-p]").forEach(function(a){a.classList.toggle("on",a.dataset.p===p)});$(".win").classList.toggle("home",p==="home");$(".main").scrollTop=0}
-document.querySelectorAll("[data-p]").forEach(function(a){a.onclick=function(){show(a.dataset.p)}});
+  document.querySelectorAll(".nv a[data-p]").forEach(function(a){a.classList.toggle("on",a.dataset.p===p)});$(".win").classList.toggle("home",p==="home");$(".main").scrollTop=0;closeProj(true)}
+document.querySelectorAll("[data-p]").forEach(function(a){a.onclick=function(){SFX.click();show(a.dataset.p)}});
 
-$("#st").onclick=function(){show("home")};function tick(){$("#clk").textContent=new Date().toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"})}tick();setInterval(tick,20000);
+$("#st").onclick=function(){SFX.click();show("home")};function tick(){var d=new Date();$("#clk").textContent=d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"});var m=$("#mclk");if(m)m.textContent=d.toLocaleString(L==="fr"?"fr-FR":"en-US",{weekday:"short",hour:"numeric",minute:"2-digit"})}tick();setInterval(tick,20000);
 /* ping the cat */
-var seq=0,M=["meow ","mrrp!","purrrr…","*headbutt*","nyaa~"];
-$("#pg").onclick=function(){var po=$("#po");if(seq===0)po.textContent="$ ping mimi\n";seq++;po.textContent+="64 bytes from mimi: icmp_seq="+seq+" ttl=64 time="+(Math.random()*.9+.1).toFixed(1)+" ms — "+M[seq%M.length]+"\n";po.scrollTop=1e5};
+var seq=0,MEOW=["meow","mrrp!","purrrr…","*headbutt*","nyaa~"];
+$("#pg").onclick=function(){SFX.meow();var po=$("#po");if(seq===0)po.textContent="$ ping mimi\n";seq++;po.textContent+="64 bytes from mimi: icmp_seq="+seq+" ttl=64 time="+(Math.random()*.9+.1).toFixed(1)+" ms — "+MEOW[seq%MEOW.length]+"\n";po.scrollTop=1e5};
+
+/* ---------- sound toggle ---------- */
+$("#snd").textContent=mute?"♪ OFF":"♪ ON";
+$("#snd").onclick=function(e){e.stopPropagation();mute=!mute;this.textContent=mute?"♪ OFF":"♪ ON";try{localStorage.setItem("snd",mute?"0":"1")}catch(x){}if(!mute)SFX.click()};
+document.querySelectorAll(".tb button:not(#close):not(#pwx)").forEach(function(b){b.onclick=function(){SFX.click()}});
+
+/* ---------- projects: open in their own window ---------- */
+/* Pictures: drop files in an "assets" folder next to this page and use the names below (or change them). */
+var P=[
+ {n:{en:"Enterprise network",fr:"Réseau d’entreprise"},t:"Cisco IOS · Packet Tracer · VLAN · OSPF · ACL",
+  d:{en:"A multi-site enterprise network designed from scratch: addressing plan, VLAN segmentation, routing between sites and access control.",fr:"Un réseau d’entreprise multi-sites conçu de zéro : plan d’adressage, segmentation en VLAN, routage entre sites et contrôle d’accès."},
+  s:{en:["Built the IP addressing plan (VLSM)","Configured VLANs, trunks and inter-VLAN routing","Set up OSPF between the sites","Secured the network with ACLs and port security"],fr:["Établi le plan d’adressage IP (VLSM)","Configuré VLAN, trunks et routage inter-VLAN","Mis en place OSPF entre les sites","Sécurisé le réseau avec ACL et port security"]},
+  i:["assets/enterprise-1.jpg","assets/enterprise-2.jpg","assets/enterprise-3.jpg"]},
+ {n:{en:"Monitoring",fr:"Supervision"},t:"Zabbix · Linux · SNMP",
+  d:{en:"A monitoring platform that watches switches, routers and servers and warns me before users notice a problem.",fr:"Une plateforme de supervision qui surveille switchs, routeurs et serveurs et me prévient avant que les utilisateurs ne remarquent un problème."},
+  s:{en:["Installed the Zabbix server and its database","Enabled SNMP on the network devices","Built dashboards and alert triggers","Set up e-mail notifications"],fr:["Installé le serveur Zabbix et sa base de données","Activé SNMP sur les équipements réseau","Créé des tableaux de bord et des déclencheurs d’alerte","Configuré les notifications par e-mail"]},
+  i:["assets/monitoring-1.jpg","assets/monitoring-2.jpg","assets/monitoring-3.jpg"]},
+ {n:{en:"Secure access",fr:"Accès sécurisé"},t:"WireGuard · Debian · Firewall",
+  d:{en:"A WireGuard VPN running on a home-lab server to reach internal services securely from anywhere.",fr:"Un VPN WireGuard sur un serveur de home-lab pour accéder en sécurité aux services internes depuis n’importe où."},
+  s:{en:["Generated keys and peer configurations","Configured firewall rules and NAT","Tested from several networks and devices"],fr:["Généré les clés et les configurations des pairs","Configuré les règles de pare-feu et le NAT","Testé depuis plusieurs réseaux et appareils"]},
+  i:["assets/vpn-1.jpg","assets/vpn-2.jpg","assets/vpn-3.jpg"]},
+ {n:{en:"VoIP telephony",fr:"Téléphonie VoIP"},t:"Asterisk · SIP · VoIP",
+  d:{en:"A small-office phone system built on Asterisk with SIP extensions and voicemail.",fr:"Un système téléphonique de petit bureau basé sur Asterisk, avec postes SIP et messagerie vocale."},
+  s:{en:["Installed and configured Asterisk","Created SIP extensions and a dial plan","Added voicemail and call routing"],fr:["Installé et configuré Asterisk","Créé les postes SIP et le plan de numérotation","Ajouté la messagerie vocale et le routage d’appels"]},
+  i:["assets/voip-1.jpg","assets/voip-2.jpg","assets/voip-3.jpg"]}
+],curP=-1,PL={en:{ov:"Overview",did:"What I did",tools:"Tools",pic:"Pictures",add:"+ add a picture"},fr:{ov:"Aperçu",did:"Ce que j’ai fait",tools:"Outils",pic:"Images",add:"+ ajouter une image"}};
+function renderProj(i){var p=P[i],t=PL[L];
+  $("#pwb").innerHTML='<h2>'+p.n[L]+'</h2><p class="meta"><b>'+t.tools+' :</b> '+p.t+'</p><h3>'+t.ov+'</h3><p>'+p.d[L]+'</p><h3>'+t.did+'</h3><ul>'+p.s[L].map(function(x){return"<li>"+x+"</li>"}).join("")+'</ul><h3>'+t.pic+'</h3><div class="gal">'+p.i.map(function(u){return'<figure class="ph"><span>'+t.add+'<br><small>'+u+'</small></span><img src="'+u+'" alt="" loading="lazy" onerror="this.remove()"></figure>'}).join("")+'</div>';
+  $("#pwn").textContent=p.n[L];$("#ptk").textContent=p.n[L];$("#ptk").hidden=false;$("#pwb").scrollTop=0}
+function openProj(i){curP=i;renderProj(i);var w=$("#pw");w.style.left="";w.style.top="";w.hidden=false;w.classList.remove("pop2");void w.offsetWidth;w.classList.add("pop2");SFX.pop()}
+function closeProj(q){var w=$("#pw");if(w.hidden)return;w.hidden=true;curP=-1;$("#ptk").hidden=true;if(!q)SFX.close()}
+document.querySelectorAll(".pj").forEach(function(c){var i=+c.dataset.pj;c.onclick=function(){openProj(i)};c.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openProj(i)}}});
+$("#pwx").onclick=function(){closeProj()};addEventListener("keydown",function(e){if(e.key==="Escape")closeProj()});
+(function(){var t=$("#pwt"),w=$("#pw"),sx,sy,ox,oy,dr=false;
+  t.addEventListener("pointerdown",function(e){if(e.target.closest("button")||innerWidth<=760)return;var r=w.getBoundingClientRect(),p=$(".scr"),pr=p.getBoundingClientRect();dr=true;ox=r.left-pr.left-p.clientLeft;oy=r.top-pr.top-p.clientTop;sx=e.clientX;sy=e.clientY;t.setPointerCapture(e.pointerId)});
+  t.addEventListener("pointermove",function(e){if(!dr)return;w.style.left=(ox+e.clientX-sx)+"px";w.style.top=(oy+e.clientY-sy)+"px"});
+  t.addEventListener("pointerup",function(){dr=false})})();
+
+/* ---------- YouTube preview (fill these in) ---------- */
+var YT={name:"My Channel",channel:"https://www.youtube.com/@yourchannel",video:""}; /* video = the ID after v= in a YouTube link */
+$("#qtn").textContent=YT.name;$("#ytl").href=YT.channel;$("#tvb").href=YT.channel;
+var qtOn=false;
+$("#qpl").onclick=function(){SFX.click();if(!YT.video){window.open(YT.channel,"_blank","noopener");return}
+  var v=$("#qtv");if(!qtOn){var f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+YT.video+"?autoplay=1&rel=0";f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.title=YT.name;v.appendChild(f);v.classList.add("on");this.textContent="||";qtOn=true}
+  else{var o=v.querySelector("iframe");if(o)o.remove();v.classList.remove("on");this.textContent="►";qtOn=false}};
+document.querySelectorAll(".tr button:not(#qpl)").forEach(function(b){b.onclick=function(){SFX.click()}});
 
 </script>
 </body>
