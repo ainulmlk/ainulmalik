@@ -28,7 +28,7 @@ html[data-l="fr"] .en,html[data-l="en"] .fr{display:none!important}
 #start:hover{background:var(--pink);color:#fff}
 #bios{white-space:pre;padding:48px 4vw;margin:0;overflow:hidden;font-size:clamp(17px,2.4vw,25px)}
 #bios .ft{position:absolute;left:4vw;bottom:5vh;color:var(--yel)}
-#gl{position:fixed;inset:0;width:100%;height:100%;opacity:0;transition:opacity 1.2s}#gl.on{opacity:1}
+#gl{position:fixed;inset:0;width:100%;height:100%;opacity:0;touch-action:none;cursor:pointer;transition:opacity 1.2s}#gl.on{opacity:1}
 .fl{position:absolute;animation:fl 6s ease-in-out infinite;user-select:none;pointer-events:none}
 @keyframes fl{50%{transform:translateY(-16px) rotate(12deg)}}
 .tag{position:fixed;left:clamp(16px,5vw,80px);background:var(--ink);color:var(--yel);font:600 clamp(16px,2.4vw,26px) "Courier Prime","Courier New",monospace;padding:3px 18px;min-height:1.6em;opacity:0;z-index:5;border-radius:8px;box-shadow:4px 4px 0 var(--mint)}
@@ -354,7 +354,7 @@ function go(k,dur,cb){var p0=cam.position.clone(),l0=look.clone(),p1=new THREE.V
   leds.forEach(function(m,i){m.emissiveIntensity=(Math.sin(n/160+i*2.3)*Math.sin(n/410+i)>.1)?1:.08});cam.lookAt(look);R.render(sc,cam)})(0);
 
 /* flow */
-addEventListener("click",function(e){
+addEventListener("pointerup",function(e){
   if(stage!=="far"||e.target.closest("#lang,#snd"))return;stage="zoom";$("#hint").classList.remove("on");
   SFX.whoosh();go("mid",2400,function(){$("#t1").classList.add("on");$("#t2").classList.add("on");
     var a="Ainul Malik",j=0;(function t(){SFX.tick();$("#t1").textContent=a.slice(0,j++);if(j<=a.length)setTimeout(t,Z*70);else type($("#t2"),"t2",60)})();
